@@ -1,0 +1,613 @@
+================================================================================
+DECISION TREE RULES
+================================================================================
+
+Nodes: 257 | Max depth: 13
+Features: 25 | Classes: 132
+
+├─ Super Strength = YES? (samples: 528)
+  ├─ Super Agility = YES? (samples: 280)
+    ├─ Leader = YES? (samples: 96)
+      ├─ Scientist = YES? (samples: 56)
+        ├─ Genre: Dc = YES? (samples: 44)
+          ├─ Wears Armor = YES? (samples: 16)
+            ├─ Flies = YES? (samples: 12)
+              GUESS: Deathstroke
+                 (samples: 4, confidence: 100.0%)
+                 Path: Super Strength=YES → Super Agility=YES → Leader=YES → Scientist=YES → Genre: Dc=YES → Wears Armor=YES → Flies=YES → 
+
+            └─ Flies = NO?
+              GUESS: Huntress
+                 (samples: 8, confidence: 50.0%)
+                 Path: Super Strength=YES → Super Agility=YES → Leader=YES → Scientist=YES → Genre: Dc=YES → Wears Armor=YES → Flies=NO → 
+
+          └─ Wears Armor = NO?
+            GUESS: Ronan
+               (samples: 4, confidence: 100.0%)
+               Path: Super Strength=YES → Super Agility=YES → Leader=YES → Scientist=YES → Genre: Dc=YES → Wears Armor=NO → 
+
+        └─ Genre: Dc = NO?
+          ├─ Tech Genius = YES? (samples: 28)
+            ├─ Flies = YES? (samples: 16)
+              ├─ Uses Weapon = YES? (samples: 8)
+                GUESS: Raven
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=YES → Super Agility=YES → Leader=YES → Scientist=YES → Genre: Dc=NO → Tech Genius=YES → Flies=YES → Uses Weapon=YES → 
+
+              └─ Uses Weapon = NO?
+                GUESS: Doctor Doom
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=YES → Super Agility=YES → Leader=YES → Scientist=YES → Genre: Dc=NO → Tech Genius=YES → Flies=YES → Uses Weapon=NO → 
+
+            └─ Flies = NO?
+              GUESS: Power Girl
+                 (samples: 8, confidence: 50.0%)
+                 Path: Super Strength=YES → Super Agility=YES → Leader=YES → Scientist=YES → Genre: Dc=NO → Tech Genius=YES → Flies=NO → 
+
+          └─ Tech Genius = NO?
+            ├─ Wears Armor = YES? (samples: 12)
+              ├─ Superhero = YES? (samples: 8)
+                GUESS: Blue Beetle
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=YES → Super Agility=YES → Leader=YES → Scientist=YES → Genre: Dc=NO → Tech Genius=NO → Wears Armor=YES → Superhero=YES → 
+
+              └─ Superhero = NO?
+                GUESS: Robin
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=YES → Super Agility=YES → Leader=YES → Scientist=YES → Genre: Dc=NO → Tech Genius=NO → Wears Armor=YES → Superhero=NO → 
+
+            └─ Wears Armor = NO?
+              GUESS: Green Arrow
+                 (samples: 4, confidence: 100.0%)
+                 Path: Super Strength=YES → Super Agility=YES → Leader=YES → Scientist=YES → Genre: Dc=NO → Tech Genius=NO → Wears Armor=NO → 
+
+      └─ Scientist = NO?
+        ├─ Solo Hero = YES? (samples: 12)
+          ├─ Avenger = YES? (samples: 8)
+            GUESS: Spider-Man
+               (samples: 4, confidence: 100.0%)
+               Path: Super Strength=YES → Super Agility=YES → Leader=YES → Scientist=NO → Solo Hero=YES → Avenger=YES → 
+
+          └─ Avenger = NO?
+            GUESS: Iron Fist
+               (samples: 4, confidence: 100.0%)
+               Path: Super Strength=YES → Super Agility=YES → Leader=YES → Scientist=NO → Solo Hero=YES → Avenger=NO → 
+
+        └─ Solo Hero = NO?
+          GUESS: Swamp Thing
+             (samples: 4, confidence: 100.0%)
+             Path: Super Strength=YES → Super Agility=YES → Leader=YES → Scientist=NO → Solo Hero=NO → 
+
+    └─ Leader = NO?
+      ├─ Male = YES? (samples: 40)
+        GUESS: Electro
+           (samples: 4, confidence: 100.0%)
+           Path: Super Strength=YES → Super Agility=YES → Leader=NO → Male=YES → 
+
+      └─ Male = NO?
+        ├─ Avenger = YES? (samples: 36)
+          ├─ Experiment Origin = YES? (samples: 28)
+            ├─ Scientist = YES? (samples: 24)
+              ├─ Genre: Dc = YES? (samples: 16)
+                GUESS: Mystique
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=YES → Super Agility=YES → Leader=NO → Male=NO → Avenger=YES → Experiment Origin=YES → Scientist=YES → Genre: Dc=YES → 
+
+              └─ Genre: Dc = NO?
+                ├─ Uses Gadgets = YES? (samples: 12)
+                  ... (truncated)
+                └─ Uses Gadgets = NO?
+                  ... (truncated)
+            └─ Scientist = NO?
+              ├─ Uses Gadgets = YES? (samples: 8)
+                GUESS: Red Tornado
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=YES → Super Agility=YES → Leader=NO → Male=NO → Avenger=YES → Experiment Origin=YES → Scientist=NO → Uses Gadgets=YES → 
+
+              └─ Uses Gadgets = NO?
+                GUESS: War Machine
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=YES → Super Agility=YES → Leader=NO → Male=NO → Avenger=YES → Experiment Origin=YES → Scientist=NO → Uses Gadgets=NO → 
+
+          └─ Experiment Origin = NO?
+            GUESS: Poison Ivy
+               (samples: 4, confidence: 100.0%)
+               Path: Super Strength=YES → Super Agility=YES → Leader=NO → Male=NO → Avenger=YES → Experiment Origin=NO → 
+
+        └─ Avenger = NO?
+          ├─ Enhanced Senses = YES? (samples: 8)
+            GUESS: Batwoman
+               (samples: 4, confidence: 100.0%)
+               Path: Super Strength=YES → Super Agility=YES → Leader=NO → Male=NO → Avenger=NO → Enhanced Senses=YES → 
+
+          └─ Enhanced Senses = NO?
+            GUESS: Starfire
+               (samples: 4, confidence: 100.0%)
+               Path: Super Strength=YES → Super Agility=YES → Leader=NO → Male=NO → Avenger=NO → Enhanced Senses=NO → 
+
+  └─ Super Agility = NO?
+    ├─ Team Member = YES? (samples: 184)
+      ├─ Wears Mask = YES? (samples: 84)
+        ├─ Uses Weapon = YES? (samples: 28)
+          GUESS: Superboy
+             (samples: 4, confidence: 100.0%)
+             Path: Super Strength=YES → Super Agility=NO → Team Member=YES → Wears Mask=YES → Uses Weapon=YES → 
+
+        └─ Uses Weapon = NO?
+          ├─ Male = YES? (samples: 24)
+            ├─ Flies = YES? (samples: 12)
+              ├─ Stealth Expert = YES? (samples: 8)
+                GUESS: Ant-Man
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=YES → Super Agility=NO → Team Member=YES → Wears Mask=YES → Uses Weapon=NO → Male=YES → Flies=YES → Stealth Expert=YES → 
+
+              └─ Stealth Expert = NO?
+                GUESS: Iceman
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=YES → Super Agility=NO → Team Member=YES → Wears Mask=YES → Uses Weapon=NO → Male=YES → Flies=YES → Stealth Expert=NO → 
+
+            └─ Flies = NO?
+              GUESS: Kitty Pryde
+                 (samples: 4, confidence: 100.0%)
+                 Path: Super Strength=YES → Super Agility=NO → Team Member=YES → Wears Mask=YES → Uses Weapon=NO → Male=YES → Flies=NO → 
+
+          └─ Male = NO?
+            ├─ Ranged Fighter = YES? (samples: 12)
+              GUESS: Luke Cage
+                 (samples: 4, confidence: 100.0%)
+                 Path: Super Strength=YES → Super Agility=NO → Team Member=YES → Wears Mask=YES → Uses Weapon=NO → Male=NO → Ranged Fighter=YES → 
+
+            └─ Ranged Fighter = NO?
+              ├─ Leader = YES? (samples: 8)
+                GUESS: Moon Knight
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=YES → Super Agility=NO → Team Member=YES → Wears Mask=YES → Uses Weapon=NO → Male=NO → Ranged Fighter=NO → Leader=YES → 
+
+              └─ Leader = NO?
+                GUESS: Juggernaut
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=YES → Super Agility=NO → Team Member=YES → Wears Mask=YES → Uses Weapon=NO → Male=NO → Ranged Fighter=NO → Leader=NO → 
+
+      └─ Wears Mask = NO?
+        ├─ Energy Projection = YES? (samples: 56)
+          ├─ Genre: Dc = YES? (samples: 40)
+            ├─ Uses Gadgets = YES? (samples: 28)
+              GUESS: Black Panther
+                 (samples: 4, confidence: 100.0%)
+                 Path: Super Strength=YES → Super Agility=NO → Team Member=YES → Wears Mask=NO → Energy Projection=YES → Genre: Dc=YES → Uses Gadgets=YES → 
+
+            └─ Uses Gadgets = NO?
+              ├─ Male = YES? (samples: 24)
+                ├─ Solo Hero = YES? (samples: 8)
+                  ... (truncated)
+                └─ Solo Hero = NO?
+                  ... (truncated)
+              └─ Male = NO?
+                ├─ Stealth Expert = YES? (samples: 16)
+                  ... (truncated)
+                └─ Stealth Expert = NO?
+                  ... (truncated)
+          └─ Genre: Dc = NO?
+            ├─ Martial Artist = YES? (samples: 12)
+              ├─ Scientist = YES? (samples: 8)
+                GUESS: Penguin
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=YES → Super Agility=NO → Team Member=YES → Wears Mask=NO → Energy Projection=YES → Genre: Dc=NO → Martial Artist=YES → Scientist=YES → 
+
+              └─ Scientist = NO?
+                GUESS: Brainiac
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=YES → Super Agility=NO → Team Member=YES → Wears Mask=NO → Energy Projection=YES → Genre: Dc=NO → Martial Artist=YES → Scientist=NO → 
+
+            └─ Martial Artist = NO?
+              GUESS: Black Adam
+                 (samples: 4, confidence: 100.0%)
+                 Path: Super Strength=YES → Super Agility=NO → Team Member=YES → Wears Mask=NO → Energy Projection=YES → Genre: Dc=NO → Martial Artist=NO → 
+
+        └─ Energy Projection = NO?
+          ├─ Genre: Dc = YES? (samples: 16)
+            ├─ Ranged Fighter = YES? (samples: 12)
+              GUESS: Cyclops
+                 (samples: 4, confidence: 100.0%)
+                 Path: Super Strength=YES → Super Agility=NO → Team Member=YES → Wears Mask=NO → Energy Projection=NO → Genre: Dc=YES → Ranged Fighter=YES → 
+
+            └─ Ranged Fighter = NO?
+              ├─ Stealth Expert = YES? (samples: 8)
+                GUESS: Vision
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=YES → Super Agility=NO → Team Member=YES → Wears Mask=NO → Energy Projection=NO → Genre: Dc=YES → Ranged Fighter=NO → Stealth Expert=YES → 
+
+              └─ Stealth Expert = NO?
+                GUESS: Nightcrawler
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=YES → Super Agility=NO → Team Member=YES → Wears Mask=NO → Energy Projection=NO → Genre: Dc=YES → Ranged Fighter=NO → Stealth Expert=NO → 
+
+          └─ Genre: Dc = NO?
+            GUESS: Two-Face
+               (samples: 4, confidence: 100.0%)
+               Path: Super Strength=YES → Super Agility=NO → Team Member=YES → Wears Mask=NO → Energy Projection=NO → Genre: Dc=NO → 
+
+    └─ Team Member = NO?
+      ├─ Regeneration = YES? (samples: 100)
+        ├─ Martial Artist = YES? (samples: 84)
+          GUESS: Superman
+             (samples: 4, confidence: 100.0%)
+             Path: Super Strength=YES → Super Agility=NO → Team Member=NO → Regeneration=YES → Martial Artist=YES → 
+
+        └─ Martial Artist = NO?
+          ├─ Ranged Fighter = YES? (samples: 80)
+            ├─ Energy Projection = YES? (samples: 44)
+              ├─ Scientist = YES? (samples: 36)
+                ├─ Wears Mask = YES? (samples: 32)
+                  ... (truncated)
+                └─ Wears Mask = NO?
+                  ... (truncated)
+              └─ Scientist = NO?
+                GUESS: Quicksilver
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=YES → Super Agility=NO → Team Member=NO → Regeneration=YES → Martial Artist=NO → Ranged Fighter=YES → Energy Projection=YES → Scientist=NO → 
+
+            └─ Energy Projection = NO?
+              ├─ Tech Genius = YES? (samples: 8)
+                GUESS: Flash
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=YES → Super Agility=NO → Team Member=NO → Regeneration=YES → Martial Artist=NO → Ranged Fighter=YES → Energy Projection=NO → Tech Genius=YES → 
+
+              └─ Tech Genius = NO?
+                GUESS: Sandman
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=YES → Super Agility=NO → Team Member=NO → Regeneration=YES → Martial Artist=NO → Ranged Fighter=YES → Energy Projection=NO → Tech Genius=NO → 
+
+          └─ Ranged Fighter = NO?
+            ├─ Leader = YES? (samples: 36)
+              ├─ Male = YES? (samples: 32)
+                ├─ Genre: Marvel = YES? (samples: 12)
+                  ... (truncated)
+                └─ Genre: Marvel = NO?
+                  ... (truncated)
+              └─ Male = NO?
+                ├─ Uses Gadgets = YES? (samples: 20)
+                  ... (truncated)
+                └─ Uses Gadgets = NO?
+                  ... (truncated)
+            └─ Leader = NO?
+              GUESS: Nick Fury
+                 (samples: 4, confidence: 100.0%)
+                 Path: Super Strength=YES → Super Agility=NO → Team Member=NO → Regeneration=YES → Martial Artist=NO → Ranged Fighter=NO → Leader=NO → 
+
+      └─ Regeneration = NO?
+        ├─ Enhanced Senses = YES? (samples: 16)
+          GUESS: Constantine
+             (samples: 4, confidence: 100.0%)
+             Path: Super Strength=YES → Super Agility=NO → Team Member=NO → Regeneration=NO → Enhanced Senses=YES → 
+
+        └─ Enhanced Senses = NO?
+          ├─ Avenger = YES? (samples: 12)
+            ├─ Wears Mask = YES? (samples: 8)
+              GUESS: Captain America
+                 (samples: 4, confidence: 100.0%)
+                 Path: Super Strength=YES → Super Agility=NO → Team Member=NO → Regeneration=NO → Enhanced Senses=NO → Avenger=YES → Wears Mask=YES → 
+
+            └─ Wears Mask = NO?
+              GUESS: Thanos
+                 (samples: 4, confidence: 100.0%)
+                 Path: Super Strength=YES → Super Agility=NO → Team Member=NO → Regeneration=NO → Enhanced Senses=NO → Avenger=YES → Wears Mask=NO → 
+
+          └─ Avenger = NO?
+            GUESS: Spectre
+               (samples: 4, confidence: 100.0%)
+               Path: Super Strength=YES → Super Agility=NO → Team Member=NO → Regeneration=NO → Enhanced Senses=NO → Avenger=NO → 
+
+└─ Super Strength = NO?
+  ├─ Immortal = YES? (samples: 248)
+    ├─ Experiment Origin = YES? (samples: 144)
+      ├─ Male = YES? (samples: 80)
+        ├─ Avenger = YES? (samples: 16)
+          ├─ Martial Artist = YES? (samples: 8)
+            GUESS: Firestorm
+               (samples: 4, confidence: 100.0%)
+               Path: Super Strength=NO → Immortal=YES → Experiment Origin=YES → Male=YES → Avenger=YES → Martial Artist=YES → 
+
+          └─ Martial Artist = NO?
+            GUESS: Doctor Octopus
+               (samples: 4, confidence: 100.0%)
+               Path: Super Strength=NO → Immortal=YES → Experiment Origin=YES → Male=YES → Avenger=YES → Martial Artist=NO → 
+
+        └─ Avenger = NO?
+          ├─ Leader = YES? (samples: 8)
+            GUESS: Bane
+               (samples: 4, confidence: 100.0%)
+               Path: Super Strength=NO → Immortal=YES → Experiment Origin=YES → Male=YES → Avenger=NO → Leader=YES → 
+
+          └─ Leader = NO?
+            GUESS: Supergirl
+               (samples: 4, confidence: 100.0%)
+               Path: Super Strength=NO → Immortal=YES → Experiment Origin=YES → Male=YES → Avenger=NO → Leader=NO → 
+
+      └─ Male = NO?
+        ├─ Leader = YES? (samples: 64)
+          ├─ Martial Artist = YES? (samples: 36)
+            GUESS: Vulture
+               (samples: 4, confidence: 100.0%)
+               Path: Super Strength=NO → Immortal=YES → Experiment Origin=YES → Male=NO → Leader=YES → Martial Artist=YES → 
+
+          └─ Martial Artist = NO?
+            ├─ Avenger = YES? (samples: 32)
+              ├─ Enhanced Senses = YES? (samples: 28)
+                GUESS: Booster Gold
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=NO → Immortal=YES → Experiment Origin=YES → Male=NO → Leader=YES → Martial Artist=NO → Avenger=YES → Enhanced Senses=YES → 
+
+              └─ Enhanced Senses = NO?
+                ├─ Genre: Marvel = YES? (samples: 24)
+                  ... (truncated)
+                └─ Genre: Marvel = NO?
+                  ... (truncated)
+            └─ Avenger = NO?
+              GUESS: Zatanna
+                 (samples: 4, confidence: 100.0%)
+                 Path: Super Strength=NO → Immortal=YES → Experiment Origin=YES → Male=NO → Leader=YES → Martial Artist=NO → Avenger=NO → 
+
+        └─ Leader = NO?
+          ├─ Avenger = YES? (samples: 28)
+            ├─ Wears Armor = YES? (samples: 24)
+              ├─ Superhero = YES? (samples: 12)
+                GUESS: Scarlet Witch
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=NO → Immortal=YES → Experiment Origin=YES → Male=NO → Leader=NO → Avenger=YES → Wears Armor=YES → Superhero=YES → 
+
+              └─ Superhero = NO?
+                ├─ Uses Weapon = YES? (samples: 8)
+                  ... (truncated)
+                └─ Uses Weapon = NO?
+                  ... (truncated)
+            └─ Wears Armor = NO?
+              ├─ Tech Genius = YES? (samples: 12)
+                ├─ Genre: Marvel = YES? (samples: 8)
+                  ... (truncated)
+                └─ Genre: Marvel = NO?
+                  ... (truncated)
+              └─ Tech Genius = NO?
+                GUESS: Daredevil
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=NO → Immortal=YES → Experiment Origin=YES → Male=NO → Leader=NO → Avenger=YES → Wears Armor=NO → Tech Genius=NO → 
+
+          └─ Avenger = NO?
+            GUESS: Shazam
+               (samples: 4, confidence: 100.0%)
+               Path: Super Strength=NO → Immortal=YES → Experiment Origin=YES → Male=NO → Leader=NO → Avenger=NO → 
+
+    └─ Experiment Origin = NO?
+      ├─ Genre: Marvel = YES? (samples: 64)
+        ├─ Uses Weapon = YES? (samples: 16)
+          GUESS: Deadpool
+             (samples: 4, confidence: 100.0%)
+             Path: Super Strength=NO → Immortal=YES → Experiment Origin=NO → Genre: Marvel=YES → Uses Weapon=YES → 
+
+        └─ Uses Weapon = NO?
+          ├─ Wears Mask = YES? (samples: 12)
+            GUESS: Beast Boy
+               (samples: 4, confidence: 100.0%)
+               Path: Super Strength=NO → Immortal=YES → Experiment Origin=NO → Genre: Marvel=YES → Uses Weapon=NO → Wears Mask=YES → 
+
+          └─ Wears Mask = NO?
+            ├─ Regeneration = YES? (samples: 8)
+              GUESS: Thor
+                 (samples: 4, confidence: 100.0%)
+                 Path: Super Strength=NO → Immortal=YES → Experiment Origin=NO → Genre: Marvel=YES → Uses Weapon=NO → Wears Mask=NO → Regeneration=YES → 
+
+            └─ Regeneration = NO?
+              GUESS: Winter Soldier
+                 (samples: 4, confidence: 100.0%)
+                 Path: Super Strength=NO → Immortal=YES → Experiment Origin=NO → Genre: Marvel=YES → Uses Weapon=NO → Wears Mask=NO → Regeneration=NO → 
+
+      └─ Genre: Marvel = NO?
+        ├─ Stealth Expert = YES? (samples: 48)
+          ├─ Team Member = YES? (samples: 28)
+            ├─ Solo Hero = YES? (samples: 16)
+              ├─ Male = YES? (samples: 8)
+                GUESS: Falcon (Sam Wilson)
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=NO → Immortal=YES → Experiment Origin=NO → Genre: Marvel=NO → Stealth Expert=YES → Team Member=YES → Solo Hero=YES → Male=YES → 
+
+              └─ Male = NO?
+                GUESS: Rogue
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=NO → Immortal=YES → Experiment Origin=NO → Genre: Marvel=NO → Stealth Expert=YES → Team Member=YES → Solo Hero=YES → Male=NO → 
+
+            └─ Solo Hero = NO?
+              ├─ Enhanced Senses = YES? (samples: 8)
+                GUESS: Darkseid
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=NO → Immortal=YES → Experiment Origin=NO → Genre: Marvel=NO → Stealth Expert=YES → Team Member=YES → Solo Hero=NO → Enhanced Senses=YES → 
+
+              └─ Enhanced Senses = NO?
+                GUESS: Batman
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=NO → Immortal=YES → Experiment Origin=NO → Genre: Marvel=NO → Stealth Expert=YES → Team Member=YES → Solo Hero=NO → Enhanced Senses=NO → 
+
+          └─ Team Member = NO?
+            ├─ Super Agility = YES? (samples: 12)
+              ├─ Male = YES? (samples: 8)
+                GUESS: Mongul
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=NO → Immortal=YES → Experiment Origin=NO → Genre: Marvel=NO → Stealth Expert=YES → Team Member=NO → Super Agility=YES → Male=YES → 
+
+              └─ Male = NO?
+                GUESS: Green Goblin
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=NO → Immortal=YES → Experiment Origin=NO → Genre: Marvel=NO → Stealth Expert=YES → Team Member=NO → Super Agility=YES → Male=NO → 
+
+            └─ Super Agility = NO?
+              GUESS: Black Cat
+                 (samples: 4, confidence: 100.0%)
+                 Path: Super Strength=NO → Immortal=YES → Experiment Origin=NO → Genre: Marvel=NO → Stealth Expert=YES → Team Member=NO → Super Agility=NO → 
+
+        └─ Stealth Expert = NO?
+          ├─ Male = YES? (samples: 20)
+            GUESS: Black Manta
+               (samples: 4, confidence: 100.0%)
+               Path: Super Strength=NO → Immortal=YES → Experiment Origin=NO → Genre: Marvel=NO → Stealth Expert=NO → Male=YES → 
+
+          └─ Male = NO?
+            ├─ Uses Weapon = YES? (samples: 16)
+              ├─ Uses Gadgets = YES? (samples: 8)
+                GUESS: Ocean Master
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=NO → Immortal=YES → Experiment Origin=NO → Genre: Marvel=NO → Stealth Expert=NO → Male=NO → Uses Weapon=YES → Uses Gadgets=YES → 
+
+              └─ Uses Gadgets = NO?
+                GUESS: Blade
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=NO → Immortal=YES → Experiment Origin=NO → Genre: Marvel=NO → Stealth Expert=NO → Male=NO → Uses Weapon=YES → Uses Gadgets=NO → 
+
+            └─ Uses Weapon = NO?
+              ├─ Leader = YES? (samples: 8)
+                GUESS: Taskmaster
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=NO → Immortal=YES → Experiment Origin=NO → Genre: Marvel=NO → Stealth Expert=NO → Male=NO → Uses Weapon=NO → Leader=YES → 
+
+              └─ Leader = NO?
+                GUESS: Red Hood
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=NO → Immortal=YES → Experiment Origin=NO → Genre: Marvel=NO → Stealth Expert=NO → Male=NO → Uses Weapon=NO → Leader=NO → 
+
+  └─ Immortal = NO?
+    ├─ Ranged Fighter = YES? (samples: 104)
+      ├─ Tech Genius = YES? (samples: 96)
+        ├─ Superhero = YES? (samples: 76)
+          ├─ Energy Projection = YES? (samples: 24)
+            ├─ Regeneration = YES? (samples: 8)
+              GUESS: She-Hulk
+                 (samples: 4, confidence: 100.0%)
+                 Path: Super Strength=NO → Immortal=NO → Ranged Fighter=YES → Tech Genius=YES → Superhero=YES → Energy Projection=YES → Regeneration=YES → 
+
+            └─ Regeneration = NO?
+              GUESS: Wolverine
+                 (samples: 4, confidence: 100.0%)
+                 Path: Super Strength=NO → Immortal=NO → Ranged Fighter=YES → Tech Genius=YES → Superhero=YES → Energy Projection=YES → Regeneration=NO → 
+
+          └─ Energy Projection = NO?
+            ├─ Genre: Dc = YES? (samples: 16)
+              ├─ Enhanced Senses = YES? (samples: 8)
+                GUESS: Gambit
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=NO → Immortal=NO → Ranged Fighter=YES → Tech Genius=YES → Superhero=YES → Energy Projection=NO → Genre: Dc=YES → Enhanced Senses=YES → 
+
+              └─ Enhanced Senses = NO?
+                GUESS: Wonder Woman
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=NO → Immortal=NO → Ranged Fighter=YES → Tech Genius=YES → Superhero=YES → Energy Projection=NO → Genre: Dc=YES → Enhanced Senses=NO → 
+
+            └─ Genre: Dc = NO?
+              ├─ Uses Weapon = YES? (samples: 8)
+                GUESS: Green Lantern
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=NO → Immortal=NO → Ranged Fighter=YES → Tech Genius=YES → Superhero=YES → Energy Projection=NO → Genre: Dc=NO → Uses Weapon=YES → 
+
+              └─ Uses Weapon = NO?
+                GUESS: Captain Marvel
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=NO → Immortal=NO → Ranged Fighter=YES → Tech Genius=YES → Superhero=YES → Energy Projection=NO → Genre: Dc=NO → Uses Weapon=NO → 
+
+        └─ Superhero = NO?
+          ├─ Wears Armor = YES? (samples: 52)
+            ├─ Team Member = YES? (samples: 32)
+              ├─ Regeneration = YES? (samples: 20)
+                GUESS: Aquaman
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=NO → Immortal=NO → Ranged Fighter=YES → Tech Genius=YES → Superhero=NO → Wears Armor=YES → Team Member=YES → Regeneration=YES → 
+
+              └─ Regeneration = NO?
+                ├─ Scientist = YES? (samples: 16)
+                  ... (truncated)
+                └─ Scientist = NO?
+                  ... (truncated)
+            └─ Team Member = NO?
+              ├─ Male = YES? (samples: 12)
+                GUESS: Mysterio
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=NO → Immortal=NO → Ranged Fighter=YES → Tech Genius=YES → Superhero=NO → Wears Armor=YES → Team Member=NO → Male=YES → 
+
+              └─ Male = NO?
+                ├─ Martial Artist = YES? (samples: 8)
+                  ... (truncated)
+                └─ Martial Artist = NO?
+                  ... (truncated)
+          └─ Wears Armor = NO?
+            ├─ Male = YES? (samples: 20)
+              ├─ Regeneration = YES? (samples: 8)
+                GUESS: Spider-Gwen
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=NO → Immortal=NO → Ranged Fighter=YES → Tech Genius=YES → Superhero=NO → Wears Armor=NO → Male=YES → Regeneration=YES → 
+
+              └─ Regeneration = NO?
+                GUESS: Silver Surfer
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=NO → Immortal=NO → Ranged Fighter=YES → Tech Genius=YES → Superhero=NO → Wears Armor=NO → Male=YES → Regeneration=NO → 
+
+            └─ Male = NO?
+              ├─ Regeneration = YES? (samples: 12)
+                ├─ Avenger = YES? (samples: 8)
+                  ... (truncated)
+                └─ Avenger = NO?
+                  ... (truncated)
+              └─ Regeneration = NO?
+                GUESS: Venom
+                   (samples: 4, confidence: 100.0%)
+                   Path: Super Strength=NO → Immortal=NO → Ranged Fighter=YES → Tech Genius=YES → Superhero=NO → Wears Armor=NO → Male=NO → Regeneration=NO → 
+
+      └─ Tech Genius = NO?
+        ├─ Leader = YES? (samples: 20)
+          ├─ Wears Armor = YES? (samples: 12)
+            ├─ Enhanced Senses = YES? (samples: 8)
+              GUESS: Storm
+                 (samples: 4, confidence: 100.0%)
+                 Path: Super Strength=NO → Immortal=NO → Ranged Fighter=YES → Tech Genius=NO → Leader=YES → Wears Armor=YES → Enhanced Senses=YES → 
+
+            └─ Enhanced Senses = NO?
+              GUESS: Riddler
+                 (samples: 4, confidence: 100.0%)
+                 Path: Super Strength=NO → Immortal=NO → Ranged Fighter=YES → Tech Genius=NO → Leader=YES → Wears Armor=YES → Enhanced Senses=NO → 
+
+          └─ Wears Armor = NO?
+            GUESS: The Mandarin
+               (samples: 4, confidence: 100.0%)
+               Path: Super Strength=NO → Immortal=NO → Ranged Fighter=YES → Tech Genius=NO → Leader=YES → Wears Armor=NO → 
+
+        └─ Leader = NO?
+          ├─ Wears Armor = YES? (samples: 8)
+            GUESS: Nightwing
+               (samples: 4, confidence: 100.0%)
+               Path: Super Strength=NO → Immortal=NO → Ranged Fighter=YES → Tech Genius=NO → Leader=NO → Wears Armor=YES → 
+
+          └─ Wears Armor = NO?
+            GUESS: Apocalypse
+               (samples: 4, confidence: 100.0%)
+               Path: Super Strength=NO → Immortal=NO → Ranged Fighter=YES → Tech Genius=NO → Leader=NO → Wears Armor=NO → 
+
+    └─ Ranged Fighter = NO?
+      ├─ Flies = YES? (samples: 8)
+        GUESS: Stargirl
+           (samples: 4, confidence: 100.0%)
+           Path: Super Strength=NO → Immortal=NO → Ranged Fighter=NO → Flies=YES → 
+
+      └─ Flies = NO?
+        GUESS: Carnage
+           (samples: 4, confidence: 100.0%)
+           Path: Super Strength=NO → Immortal=NO → Ranged Fighter=NO → Flies=NO → 
+
+
+================================================================================
+FEATURE IMPORTANCE (top 10)
+================================================================================
+ 1. male                           0.0859
+ 2. enhanced_senses                0.0703
+ 3. leader                         0.0625
+ 4. uses_weapon                    0.0547
+ 5. wears_armor                    0.0547
+ 6. avenger                        0.0547
+ 7. genre_DC                       0.0469
+ 8. solo_hero                      0.0469
+ 9. regeneration                   0.0469
+10. martial_artist                 0.0469

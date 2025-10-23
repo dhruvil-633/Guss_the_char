@@ -1,0 +1,136 @@
+SKLEARN TEXT REPRESENTATION
+================================================================================
+
+|--- Genre Marvel <= 0.50
+|   |--- Super Agility <= 0.50
+|   |   |--- Uses Gadgets <= 0.50
+|   |   |   |--- Super Strength <= 0.50
+|   |   |   |   |--- Team Member <= 0.50
+|   |   |   |   |   |--- class: Constantine
+|   |   |   |   |--- Team Member >  0.50
+|   |   |   |   |   |--- class: Green Lantern
+|   |   |   |--- Super Strength >  0.50
+|   |   |   |   |--- Team Member <= 0.50
+|   |   |   |   |   |--- Enhanced Senses <= 0.50
+|   |   |   |   |   |   |--- class: Darkseid
+|   |   |   |   |   |--- Enhanced Senses >  0.50
+|   |   |   |   |   |   |--- class: Bizarro
+|   |   |   |   |--- Team Member >  0.50
+|   |   |   |   |   |--- Enhanced Senses <= 0.50
+|   |   |   |   |   |   |--- class: Doctor Fate
+|   |   |   |   |   |--- Enhanced Senses >  0.50
+|   |   |   |   |   |   |--- class: Aquaman
+|   |   |--- Uses Gadgets >  0.50
+|   |   |   |--- Enhanced Senses <= 0.50
+|   |   |   |   |--- Super Strength <= 0.50
+|   |   |   |   |   |--- Team Member <= 0.50
+|   |   |   |   |   |   |--- class: Captain Cold
+|   |   |   |   |   |--- Team Member >  0.50
+|   |   |   |   |   |   |--- class: Atom
+|   |   |   |   |--- Super Strength >  0.50
+|   |   |   |   |   |--- class: Ocean Master
+|   |   |   |--- Enhanced Senses >  0.50
+|   |   |   |   |--- Super Strength <= 0.50
+|   |   |   |   |   |--- class: Black Manta
+|   |   |   |   |--- Super Strength >  0.50
+|   |   |   |   |   |--- Team Member <= 0.50
+|   |   |   |   |   |   |--- class: Brainiac
+|   |   |   |   |   |--- Team Member >  0.50
+|   |   |   |   |   |   |--- class: Cyborg
+|   |--- Super Agility >  0.50
+|   |   |--- Team Member <= 0.50
+|   |   |   |--- Super Strength <= 0.50
+|   |   |   |   |--- Enhanced Senses <= 0.50
+|   |   |   |   |   |--- class: Harley Quinn
+|   |   |   |   |--- Enhanced Senses >  0.50
+|   |   |   |   |   |--- Uses Gadgets <= 0.50
+|   |   |   |   |   |   |--- class: Reverse Flash
+|   |   |   |   |   |--- Uses Gadgets >  0.50
+|   |   |   |   |   |   |--- class: Catwoman
+|   |   |   |--- Super Strength >  0.50
+|   |   |   |   |--- Enhanced Senses <= 0.50
+|   |   |   |   |   |--- class: Ra's al Ghul
+|   |   |   |   |--- Enhanced Senses >  0.50
+|   |   |   |   |   |--- class: Bane
+|   |   |--- Team Member >  0.50
+|   |   |   |--- Super Strength <= 0.50
+|   |   |   |   |--- Uses Gadgets <= 0.50
+|   |   |   |   |   |--- Enhanced Senses <= 0.50
+|   |   |   |   |   |   |--- class: Plastic Man
+|   |   |   |   |   |--- Enhanced Senses >  0.50
+|   |   |   |   |   |   |--- class: Beast Boy
+|   |   |   |   |--- Uses Gadgets >  0.50
+|   |   |   |   |   |--- Enhanced Senses <= 0.50
+|   |   |   |   |   |   |--- class: Batgirl
+|   |   |   |   |   |--- Enhanced Senses >  0.50
+|   |   |   |   |   |   |--- class: Batman
+|   |   |   |--- Super Strength >  0.50
+|   |   |   |   |--- class: Wonder Woman
+|--- Genre Marvel >  0.50
+|   |--- Super Agility <= 0.50
+|   |   |--- Enhanced Senses <= 0.50
+|   |   |   |--- Team Member <= 0.50
+|   |   |   |   |--- Uses Gadgets <= 0.50
+|   |   |   |   |   |--- Super Strength <= 0.50
+|   |   |   |   |   |   |--- class: Magneto
+|   |   |   |   |   |--- Super Strength >  0.50
+|   |   |   |   |   |   |--- class: Ego
+|   |   |   |   |--- Uses Gadgets >  0.50
+|   |   |   |   |   |--- Super Strength <= 0.50
+|   |   |   |   |   |   |--- class: Red Skull
+|   |   |   |   |   |--- Super Strength >  0.50
+|   |   |   |   |   |   |--- class: Doctor Doom
+|   |   |   |--- Team Member >  0.50
+|   |   |   |   |--- Super Strength <= 0.50
+|   |   |   |   |   |--- Uses Gadgets <= 0.50
+|   |   |   |   |   |   |--- class: Doctor Strange
+|   |   |   |   |   |--- Uses Gadgets >  0.50
+|   |   |   |   |   |   |--- class: Iron Man
+|   |   |   |   |--- Super Strength >  0.50
+|   |   |   |   |   |--- class: Colossus
+|   |   |--- Enhanced Senses >  0.50
+|   |   |   |--- Team Member <= 0.50
+|   |   |   |   |--- Uses Gadgets <= 0.50
+|   |   |   |   |   |--- class: Abomination
+|   |   |   |   |--- Uses Gadgets >  0.50
+|   |   |   |   |   |--- class: Apocalypse
+|   |   |   |--- Team Member >  0.50
+|   |   |   |   |--- Super Strength <= 0.50
+|   |   |   |   |   |--- class: Cyclops
+|   |   |   |   |--- Super Strength >  0.50
+|   |   |   |   |   |--- class: Captain Marvel
+|   |--- Super Agility >  0.50
+|   |   |--- Team Member <= 0.50
+|   |   |   |--- Super Strength <= 0.50
+|   |   |   |   |--- Enhanced Senses <= 0.50
+|   |   |   |   |   |--- Uses Gadgets <= 0.50
+|   |   |   |   |   |   |--- class: Electro
+|   |   |   |   |   |--- Uses Gadgets >  0.50
+|   |   |   |   |   |   |--- class: Doctor Octopus
+|   |   |   |   |--- Enhanced Senses >  0.50
+|   |   |   |   |   |--- Uses Gadgets <= 0.50
+|   |   |   |   |   |   |--- class: Daredevil
+|   |   |   |   |   |--- Uses Gadgets >  0.50
+|   |   |   |   |   |   |--- class: Black Cat
+|   |   |   |--- Super Strength >  0.50
+|   |   |   |   |--- Uses Gadgets <= 0.50
+|   |   |   |   |   |--- class: Carnage
+|   |   |   |   |--- Uses Gadgets >  0.50
+|   |   |   |   |   |--- class: Blade
+|   |   |--- Team Member >  0.50
+|   |   |   |--- Super Strength <= 0.50
+|   |   |   |   |--- Enhanced Senses <= 0.50
+|   |   |   |   |   |--- Uses Gadgets <= 0.50
+|   |   |   |   |   |   |--- class: Kitty Pryde
+|   |   |   |   |   |--- Uses Gadgets >  0.50
+|   |   |   |   |   |   |--- class: Ant-Man
+|   |   |   |   |--- Enhanced Senses >  0.50
+|   |   |   |   |   |--- Uses Gadgets <= 0.50
+|   |   |   |   |   |   |--- class: Gambit
+|   |   |   |   |   |--- Uses Gadgets >  0.50
+|   |   |   |   |   |   |--- class: Black Widow
+|   |   |   |--- Super Strength >  0.50
+|   |   |   |   |--- Uses Gadgets <= 0.50
+|   |   |   |   |   |--- class: Captain America
+|   |   |   |   |--- Uses Gadgets >  0.50
+|   |   |   |   |   |--- class: Black Panther

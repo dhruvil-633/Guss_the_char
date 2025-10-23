@@ -1,0 +1,457 @@
+================================================================================
+DECISION TREE RULES
+================================================================================
+
+Nodes: 263 | Max depth: 13
+Features: 40 | Classes: 132
+
+├─ Male = YES? (samples: 333)
+  ├─ Telepathy = YES? (samples: 80)
+    ├─ Shapeshifter = YES? (samples: 71)
+      ├─ Trained Assassin = YES? (samples: 68)
+        ├─ Ranged Fighter = YES? (samples: 55)
+          ├─ Uses Gadgets = YES? (samples: 50)
+            ├─ Experiment Origin = YES? (samples: 32)
+              ├─ Immortal = YES? (samples: 24)
+                ├─ Mutant = YES? (samples: 19)
+                  ... (truncated)
+                └─ Mutant = NO?
+                  ... (truncated)
+              └─ Immortal = NO?
+                ├─ Uses Magic = YES? (samples: 5)
+                  ... (truncated)
+                └─ Uses Magic = NO?
+                  ... (truncated)
+            └─ Experiment Origin = NO?
+              ├─ Superhero = YES? (samples: 8)
+                GUESS: Swamp Thing
+                   (samples: 3, confidence: 100.0%)
+                   Path: Male=YES → Telepathy=YES → Shapeshifter=YES → Trained Assassin=YES → Ranged Fighter=YES → Uses Gadgets=YES → Experiment Origin=NO → Superhero=YES → 
+
+              └─ Superhero = NO?
+                ├─ Leader = YES? (samples: 5)
+                  ... (truncated)
+                └─ Leader = NO?
+                  ... (truncated)
+          └─ Uses Gadgets = NO?
+            ├─ Reformed Villain = YES? (samples: 18)
+              ├─ Tech Enhanced = YES? (samples: 13)
+                ├─ Enhanced Senses = YES? (samples: 10)
+                  ... (truncated)
+                └─ Enhanced Senses = NO?
+                  ... (truncated)
+              └─ Tech Enhanced = NO?
+                GUESS: Sandman
+                   (samples: 3, confidence: 100.0%)
+                   Path: Male=YES → Telepathy=YES → Shapeshifter=YES → Trained Assassin=YES → Ranged Fighter=YES → Uses Gadgets=NO → Reformed Villain=YES → Tech Enhanced=NO → 
+
+            └─ Reformed Villain = NO?
+              ├─ Genre: Marvel = YES? (samples: 5)
+                GUESS: Black Adam
+                   (samples: 3, confidence: 100.0%)
+                   Path: Male=YES → Telepathy=YES → Shapeshifter=YES → Trained Assassin=YES → Ranged Fighter=YES → Uses Gadgets=NO → Reformed Villain=NO → Genre: Marvel=YES → 
+
+              └─ Genre: Marvel = NO?
+                GUESS: Cyborg
+                   (samples: 2, confidence: 100.0%)
+                   Path: Male=YES → Telepathy=YES → Shapeshifter=YES → Trained Assassin=YES → Ranged Fighter=YES → Uses Gadgets=NO → Reformed Villain=NO → Genre: Marvel=NO → 
+
+        └─ Ranged Fighter = NO?
+          ├─ Anti Hero = YES? (samples: 5)
+            GUESS: Ego
+               (samples: 2, confidence: 100.0%)
+               Path: Male=YES → Telepathy=YES → Shapeshifter=YES → Trained Assassin=YES → Ranged Fighter=NO → Anti Hero=YES → 
+
+          └─ Anti Hero = NO?
+            GUESS: Ant-Man
+               (samples: 3, confidence: 100.0%)
+               Path: Male=YES → Telepathy=YES → Shapeshifter=YES → Trained Assassin=YES → Ranged Fighter=NO → Anti Hero=NO → 
+
+      └─ Trained Assassin = NO?
+        ├─ Superhero = YES? (samples: 13)
+          GUESS: Kitty Pryde
+             (samples: 4, confidence: 100.0%)
+             Path: Male=YES → Telepathy=YES → Shapeshifter=YES → Trained Assassin=NO → Superhero=YES → 
+
+        └─ Superhero = NO?
+          ├─ Genre: Marvel = YES? (samples: 9)
+            GUESS: Lex Luthor
+               (samples: 3, confidence: 100.0%)
+               Path: Male=YES → Telepathy=YES → Shapeshifter=YES → Trained Assassin=NO → Superhero=NO → Genre: Marvel=YES → 
+
+          └─ Genre: Marvel = NO?
+            ├─ Anti Hero = YES? (samples: 6)
+              GUESS: Black Canary
+                 (samples: 3, confidence: 100.0%)
+                 Path: Male=YES → Telepathy=YES → Shapeshifter=YES → Trained Assassin=NO → Superhero=NO → Genre: Marvel=NO → Anti Hero=YES → 
+
+            └─ Anti Hero = NO?
+              GUESS: Jean Grey
+                 (samples: 3, confidence: 100.0%)
+                 Path: Male=YES → Telepathy=YES → Shapeshifter=YES → Trained Assassin=NO → Superhero=NO → Genre: Marvel=NO → Anti Hero=NO → 
+
+    └─ Shapeshifter = NO?
+      GUESS: Iceman
+         (samples: 3, confidence: 100.0%)
+         Path: Male=YES → Telepathy=YES → Shapeshifter=NO → 
+
+  └─ Telepathy = NO?
+    ├─ Mutant = YES? (samples: 9)
+      ├─ Experiment Origin = YES? (samples: 4)
+        GUESS: Power Girl
+           (samples: 2, confidence: 100.0%)
+           Path: Male=YES → Telepathy=NO → Mutant=YES → Experiment Origin=YES → 
+
+      └─ Experiment Origin = NO?
+        GUESS: Falcon (Sam Wilson)
+           (samples: 2, confidence: 100.0%)
+           Path: Male=YES → Telepathy=NO → Mutant=YES → Experiment Origin=NO → 
+
+    └─ Mutant = NO?
+      ├─ Reformed Villain = YES? (samples: 5)
+        GUESS: Huntress
+           (samples: 2, confidence: 100.0%)
+           Path: Male=YES → Telepathy=NO → Mutant=NO → Reformed Villain=YES → 
+
+      └─ Reformed Villain = NO?
+        GUESS: Bizarro
+           (samples: 3, confidence: 100.0%)
+           Path: Male=YES → Telepathy=NO → Mutant=NO → Reformed Villain=NO → 
+
+└─ Male = NO?
+  ├─ Avenger = YES? (samples: 253)
+    ├─ Stealth Expert = YES? (samples: 195)
+      ├─ Super Strength = YES? (samples: 134)
+        ├─ Wears Armor = YES? (samples: 55)
+          ├─ Team Member = YES? (samples: 49)
+            ├─ Solo Hero = YES? (samples: 29)
+              ├─ Trained Assassin = YES? (samples: 9)
+                ├─ Mystic Power Source = YES? (samples: 6)
+                  ... (truncated)
+                └─ Mystic Power Source = NO?
+                  ... (truncated)
+              └─ Trained Assassin = NO?
+                GUESS: Falcon
+                   (samples: 3, confidence: 100.0%)
+                   Path: Male=NO → Avenger=YES → Stealth Expert=YES → Super Strength=YES → Wears Armor=YES → Team Member=YES → Solo Hero=YES → Trained Assassin=NO → 
+
+            └─ Solo Hero = NO?
+              ├─ Dual Identity = YES? (samples: 20)
+                ├─ Tech Genius = YES? (samples: 6)
+                  ... (truncated)
+                └─ Tech Genius = NO?
+                  ... (truncated)
+              └─ Dual Identity = NO?
+                ├─ Super Agility = YES? (samples: 14)
+                  ... (truncated)
+                └─ Super Agility = NO?
+                  ... (truncated)
+          └─ Team Member = NO?
+            ├─ Leader = YES? (samples: 20)
+              ├─ Enhanced Senses = YES? (samples: 12)
+                ├─ Wears Mask = YES? (samples: 8)
+                  ... (truncated)
+                └─ Wears Mask = NO?
+                  ... (truncated)
+              └─ Enhanced Senses = NO?
+                GUESS: Captain America
+                   (samples: 4, confidence: 100.0%)
+                   Path: Male=NO → Avenger=YES → Stealth Expert=YES → Super Strength=YES → Wears Armor=YES → Team Member=NO → Leader=YES → Enhanced Senses=NO → 
+
+            └─ Leader = NO?
+              ├─ Genre: Marvel = YES? (samples: 8)
+                ├─ Regeneration = YES? (samples: 6)
+                  ... (truncated)
+                └─ Regeneration = NO?
+                  ... (truncated)
+              └─ Genre: Marvel = NO?
+                GUESS: Red Tornado
+                   (samples: 2, confidence: 100.0%)
+                   Path: Male=NO → Avenger=YES → Stealth Expert=YES → Super Strength=YES → Wears Armor=YES → Team Member=NO → Leader=NO → Genre: Marvel=NO → 
+
+        └─ Wears Armor = NO?
+          ├─ Ranged Fighter = YES? (samples: 6)
+            GUESS: Luke Cage
+               (samples: 2, confidence: 100.0%)
+               Path: Male=NO → Avenger=YES → Stealth Expert=YES → Super Strength=YES → Wears Armor=NO → Ranged Fighter=YES → 
+
+          └─ Ranged Fighter = NO?
+            GUESS: Hawkgirl
+               (samples: 4, confidence: 100.0%)
+               Path: Male=NO → Avenger=YES → Stealth Expert=YES → Super Strength=YES → Wears Armor=NO → Ranged Fighter=NO → 
+
+      └─ Super Strength = NO?
+        ├─ Tech Enhanced = YES? (samples: 79)
+          ├─ Wears Armor = YES? (samples: 61)
+            ├─ Mystic Power Source = YES? (samples: 41)
+              ├─ Energy Projection = YES? (samples: 28)
+                ├─ Tech Genius = YES? (samples: 14)
+                  ... (truncated)
+                └─ Tech Genius = NO?
+                  ... (truncated)
+              └─ Energy Projection = NO?
+                ├─ Alien Origin = YES? (samples: 14)
+                  ... (truncated)
+                └─ Alien Origin = NO?
+                  ... (truncated)
+            └─ Mystic Power Source = NO?
+              ├─ Justice League = YES? (samples: 13)
+                ├─ Energy Projection = YES? (samples: 7)
+                  ... (truncated)
+                └─ Energy Projection = NO?
+                  ... (truncated)
+              └─ Justice League = NO?
+                ├─ Enhanced Senses = YES? (samples: 6)
+                  ... (truncated)
+                └─ Enhanced Senses = NO?
+                  ... (truncated)
+          └─ Wears Armor = NO?
+            ├─ Justice League = YES? (samples: 20)
+              ├─ Dual Identity = YES? (samples: 15)
+                ├─ Genre: Marvel = YES? (samples: 12)
+                  ... (truncated)
+                └─ Genre: Marvel = NO?
+                  ... (truncated)
+              └─ Dual Identity = NO?
+                ├─ Alien Origin = YES? (samples: 3)
+                  ... (truncated)
+                └─ Alien Origin = NO?
+                  ... (truncated)
+            └─ Justice League = NO?
+              ├─ Uses Magic = YES? (samples: 5)
+                GUESS: Venom
+                   (samples: 2, confidence: 100.0%)
+                   Path: Male=NO → Avenger=YES → Stealth Expert=YES → Super Strength=NO → Tech Enhanced=YES → Wears Armor=NO → Justice League=NO → Uses Magic=YES → 
+
+              └─ Uses Magic = NO?
+                GUESS: Jessica Jones
+                   (samples: 3, confidence: 100.0%)
+                   Path: Male=NO → Avenger=YES → Stealth Expert=YES → Super Strength=NO → Tech Enhanced=YES → Wears Armor=NO → Justice League=NO → Uses Magic=NO → 
+
+        └─ Tech Enhanced = NO?
+          ├─ Uses Magic = YES? (samples: 18)
+            ├─ Genre: Marvel = YES? (samples: 12)
+              ├─ Shapeshifter = YES? (samples: 9)
+                ├─ Martial Artist = YES? (samples: 7)
+                  ... (truncated)
+                └─ Martial Artist = NO?
+                  ... (truncated)
+              └─ Shapeshifter = NO?
+                GUESS: Nightwing
+                   (samples: 2, confidence: 100.0%)
+                   Path: Male=NO → Avenger=YES → Stealth Expert=YES → Super Strength=NO → Tech Enhanced=NO → Uses Magic=YES → Genre: Marvel=YES → Shapeshifter=NO → 
+
+            └─ Genre: Marvel = NO?
+              GUESS: Carnage
+                 (samples: 3, confidence: 100.0%)
+                 Path: Male=NO → Avenger=YES → Stealth Expert=YES → Super Strength=NO → Tech Enhanced=NO → Uses Magic=YES → Genre: Marvel=NO → 
+
+          └─ Uses Magic = NO?
+            ├─ From Earth = YES? (samples: 6)
+              GUESS: Wonder Woman
+                 (samples: 4, confidence: 100.0%)
+                 Path: Male=NO → Avenger=YES → Stealth Expert=YES → Super Strength=NO → Tech Enhanced=NO → Uses Magic=NO → From Earth=YES → 
+
+            └─ From Earth = NO?
+              GUESS: Daredevil
+                 (samples: 2, confidence: 100.0%)
+                 Path: Male=NO → Avenger=YES → Stealth Expert=YES → Super Strength=NO → Tech Enhanced=NO → Uses Magic=NO → From Earth=NO → 
+
+    └─ Stealth Expert = NO?
+      ├─ Mystic Power Source = YES? (samples: 61)
+        ├─ Energy Projection = YES? (samples: 48)
+          ├─ Regeneration = YES? (samples: 39)
+            ├─ Tech Genius = YES? (samples: 25)
+              ├─ Trained Assassin = YES? (samples: 15)
+                ├─ Experiment Origin = YES? (samples: 7)
+                  ... (truncated)
+                └─ Experiment Origin = NO?
+                  ... (truncated)
+              └─ Trained Assassin = NO?
+                ├─ Superhero = YES? (samples: 8)
+                  ... (truncated)
+                └─ Superhero = NO?
+                  ... (truncated)
+            └─ Tech Genius = NO?
+              ├─ Scientist = YES? (samples: 10)
+                ├─ Military Background = YES? (samples: 8)
+                  ... (truncated)
+                └─ Military Background = NO?
+                  ... (truncated)
+              └─ Scientist = NO?
+                GUESS: Poison Ivy
+                   (samples: 2, confidence: 100.0%)
+                   Path: Male=NO → Avenger=YES → Stealth Expert=NO → Mystic Power Source=YES → Energy Projection=YES → Regeneration=YES → Tech Genius=NO → Scientist=NO → 
+
+          └─ Regeneration = NO?
+            ├─ Shapeshifter = YES? (samples: 14)
+              ├─ Wears Mask = YES? (samples: 10)
+                ├─ Mutant = YES? (samples: 4)
+                  ... (truncated)
+                └─ Mutant = NO?
+                  ... (truncated)
+              └─ Wears Mask = NO?
+                ├─ Military Background = YES? (samples: 6)
+                  ... (truncated)
+                └─ Military Background = NO?
+                  ... (truncated)
+            └─ Shapeshifter = NO?
+              GUESS: Abomination
+                 (samples: 4, confidence: 100.0%)
+                 Path: Male=NO → Avenger=YES → Stealth Expert=NO → Mystic Power Source=YES → Energy Projection=YES → Regeneration=NO → Shapeshifter=NO → 
+
+        └─ Energy Projection = NO?
+          ├─ Uses Weapon = YES? (samples: 9)
+            GUESS: Blade
+               (samples: 4, confidence: 100.0%)
+               Path: Male=NO → Avenger=YES → Stealth Expert=NO → Mystic Power Source=YES → Energy Projection=NO → Uses Weapon=YES → 
+
+          └─ Uses Weapon = NO?
+            ├─ Wears Armor = YES? (samples: 5)
+              GUESS: Two-Face
+                 (samples: 3, confidence: 100.0%)
+                 Path: Male=NO → Avenger=YES → Stealth Expert=NO → Mystic Power Source=YES → Energy Projection=NO → Uses Weapon=NO → Wears Armor=YES → 
+
+            └─ Wears Armor = NO?
+              GUESS: Green Arrow
+                 (samples: 2, confidence: 100.0%)
+                 Path: Male=NO → Avenger=YES → Stealth Expert=NO → Mystic Power Source=YES → Energy Projection=NO → Uses Weapon=NO → Wears Armor=NO → 
+
+      └─ Mystic Power Source = NO?
+        ├─ Genre: Dc = YES? (samples: 13)
+          ├─ Tech Genius = YES? (samples: 8)
+            GUESS: Colossus
+               (samples: 4, confidence: 100.0%)
+               Path: Male=NO → Avenger=YES → Stealth Expert=NO → Mystic Power Source=NO → Genre: Dc=YES → Tech Genius=YES → 
+
+          └─ Tech Genius = NO?
+            ├─ Immortal = YES? (samples: 4)
+              GUESS: Nightcrawler
+                 (samples: 3, confidence: 100.0%)
+                 Path: Male=NO → Avenger=YES → Stealth Expert=NO → Mystic Power Source=NO → Genre: Dc=YES → Tech Genius=NO → Immortal=YES → 
+
+            └─ Immortal = NO?
+              GUESS: Juggernaut
+                 (samples: 1, confidence: 100.0%)
+                 Path: Male=NO → Avenger=YES → Stealth Expert=NO → Mystic Power Source=NO → Genre: Dc=YES → Tech Genius=NO → Immortal=NO → 
+
+        └─ Genre: Dc = NO?
+          ├─ Leader = YES? (samples: 5)
+            GUESS: Brainiac
+               (samples: 4, confidence: 100.0%)
+               Path: Male=NO → Avenger=YES → Stealth Expert=NO → Mystic Power Source=NO → Genre: Dc=NO → Leader=YES → 
+
+          └─ Leader = NO?
+            GUESS: Stargirl
+               (samples: 1, confidence: 100.0%)
+               Path: Male=NO → Avenger=YES → Stealth Expert=NO → Mystic Power Source=NO → Genre: Dc=NO → Leader=NO → 
+
+  └─ Avenger = NO?
+    ├─ From Earth = YES? (samples: 58)
+      ├─ Regeneration = YES? (samples: 5)
+        GUESS: Sabretooth
+           (samples: 3, confidence: 100.0%)
+           Path: Male=NO → Avenger=NO → From Earth=YES → Regeneration=YES → 
+
+      └─ Regeneration = NO?
+        GUESS: The Mandarin
+           (samples: 2, confidence: 100.0%)
+           Path: Male=NO → Avenger=NO → From Earth=YES → Regeneration=NO → 
+
+    └─ From Earth = NO?
+      ├─ Ranged Fighter = YES? (samples: 53)
+        ├─ Telepathy = YES? (samples: 38)
+          ├─ Regeneration = YES? (samples: 34)
+            ├─ Military Background = YES? (samples: 19)
+              ├─ Tech Enhanced = YES? (samples: 13)
+                ├─ Super Agility = YES? (samples: 10)
+                  ... (truncated)
+                └─ Super Agility = NO?
+                  ... (truncated)
+              └─ Tech Enhanced = NO?
+                GUESS: Superman
+                   (samples: 3, confidence: 100.0%)
+                   Path: Male=NO → Avenger=NO → From Earth=NO → Ranged Fighter=YES → Telepathy=YES → Regeneration=YES → Military Background=YES → Tech Enhanced=NO → 
+
+            └─ Military Background = NO?
+              ├─ Enhanced Senses = YES? (samples: 6)
+                GUESS: Magneto
+                   (samples: 3, confidence: 100.0%)
+                   Path: Male=NO → Avenger=NO → From Earth=NO → Ranged Fighter=YES → Telepathy=YES → Regeneration=YES → Military Background=NO → Enhanced Senses=YES → 
+
+              └─ Enhanced Senses = NO?
+                GUESS: Professor X
+                   (samples: 3, confidence: 100.0%)
+                   Path: Male=NO → Avenger=NO → From Earth=NO → Ranged Fighter=YES → Telepathy=YES → Regeneration=YES → Military Background=NO → Enhanced Senses=NO → 
+
+          └─ Regeneration = NO?
+            ├─ Super Strength = YES? (samples: 15)
+              GUESS: Spectre
+                 (samples: 3, confidence: 100.0%)
+                 Path: Male=NO → Avenger=NO → From Earth=NO → Ranged Fighter=YES → Telepathy=YES → Regeneration=NO → Super Strength=YES → 
+
+            └─ Super Strength = NO?
+              ├─ Tech Genius = YES? (samples: 12)
+                ├─ Martial Artist = YES? (samples: 6)
+                  ... (truncated)
+                └─ Martial Artist = NO?
+                  ... (truncated)
+              └─ Tech Genius = NO?
+                ├─ Military Background = YES? (samples: 6)
+                  ... (truncated)
+                └─ Military Background = NO?
+                  ... (truncated)
+        └─ Telepathy = NO?
+          GUESS: Iron Fist
+             (samples: 4, confidence: 100.0%)
+             Path: Male=NO → Avenger=NO → From Earth=NO → Ranged Fighter=YES → Telepathy=NO → 
+
+      └─ Ranged Fighter = NO?
+        ├─ Leader = YES? (samples: 15)
+          ├─ Uses Gadgets = YES? (samples: 11)
+            GUESS: Loki
+               (samples: 4, confidence: 100.0%)
+               Path: Male=NO → Avenger=NO → From Earth=NO → Ranged Fighter=NO → Leader=YES → Uses Gadgets=YES → 
+
+          └─ Uses Gadgets = NO?
+            ├─ Trained Assassin = YES? (samples: 7)
+              GUESS: Ronan
+                 (samples: 2, confidence: 100.0%)
+                 Path: Male=NO → Avenger=NO → From Earth=NO → Ranged Fighter=NO → Leader=YES → Uses Gadgets=NO → Trained Assassin=YES → 
+
+            └─ Trained Assassin = NO?
+              ├─ Stealth Expert = YES? (samples: 5)
+                GUESS: Wasp
+                   (samples: 3, confidence: 100.0%)
+                   Path: Male=NO → Avenger=NO → From Earth=NO → Ranged Fighter=NO → Leader=YES → Uses Gadgets=NO → Trained Assassin=NO → Stealth Expert=YES → 
+
+              └─ Stealth Expert = NO?
+                GUESS: Taskmaster
+                   (samples: 2, confidence: 100.0%)
+                   Path: Male=NO → Avenger=NO → From Earth=NO → Ranged Fighter=NO → Leader=YES → Uses Gadgets=NO → Trained Assassin=NO → Stealth Expert=NO → 
+
+        └─ Leader = NO?
+          ├─ Experiment Origin = YES? (samples: 4)
+            GUESS: Batwoman
+               (samples: 3, confidence: 100.0%)
+               Path: Male=NO → Avenger=NO → From Earth=NO → Ranged Fighter=NO → Leader=NO → Experiment Origin=YES → 
+
+          └─ Experiment Origin = NO?
+            GUESS: Starfire
+               (samples: 1, confidence: 100.0%)
+               Path: Male=NO → Avenger=NO → From Earth=NO → Ranged Fighter=NO → Leader=NO → Experiment Origin=NO → 
+
+
+================================================================================
+FEATURE IMPORTANCE (top 10)
+================================================================================
+ 1. genre_Marvel                   0.0500
+ 2. leader                         0.0471
+ 3. tech_genius                    0.0443
+ 4. regeneration                   0.0441
+ 5. military_background            0.0407
+ 6. enhanced_senses                0.0381
+ 7. trained_assassin               0.0354
+ 8. shapeshifter                   0.0352
+ 9. justice_league                 0.0344
+10. energy_projection              0.0343

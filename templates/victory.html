@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victory!</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css', v=1) }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="bg-animated" id="bg-animated"></div>
+  <div class="container">
+    <div class="result-card correct">
+      <div class="result-icon"><i class="fas fa-check-circle"></i></div>
+      <h1>🎉 GUESSED IT!</h1>
+     <h3 style="color: white; font-size: 1.8rem; margin: 1rem 0; text-align: center; text-shadow: 0 0 10px rgba(255,255,255,0.5);">
+  I NEED APPRAISAL
+</h3>
+      <a href="/" class="start-btn">Play Again</a>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <script>
+    function createFloatingIcons() {
+      const icons = ['fa-mask', 'fa-bolt', 'fa-fire', 'fa-shield-halved', 'fa-star'];
+      const bg = document.getElementById('bg-animated');
+      for (let i = 0; i < 15; i++) {
+        const icon = document.createElement('i');
+        icon.className = `fas ${icons[Math.floor(Math.random() * icons.length)]} hero-icon`;
+        icon.style.left = Math.random() * 100 + '%';
+        icon.style.top = Math.random() * 100 + '%';
+        icon.style.animationDelay = Math.random() * 5 + 's';
+        bg.appendChild(icon);
+      }
+    }
+    createFloatingIcons();
+  </script>
+</body>
+</html>

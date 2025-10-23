@@ -1,0 +1,286 @@
+================================================================================
+DECISION TREE RULES
+================================================================================
+
+Nodes: 89 | Max depth: 6
+Features: 7 | Classes: 132
+
+├─ Genre: Marvel = YES? (samples: 528)
+  ├─ Super Agility = YES? (samples: 244)
+    ├─ Uses Gadgets = YES? (samples: 148)
+      ├─ Super Strength = YES? (samples: 100)
+        ├─ Team Member = YES? (samples: 24)
+          GUESS: Raven
+             (samples: 12, confidence: 33.3%)
+             Path: Genre: Marvel=YES → Super Agility=YES → Uses Gadgets=YES → Super Strength=YES → Team Member=YES → 
+
+        └─ Team Member = NO?
+          GUESS: Hawkeye
+             (samples: 12, confidence: 33.3%)
+             Path: Genre: Marvel=YES → Super Agility=YES → Uses Gadgets=YES → Super Strength=YES → Team Member=NO → 
+
+      └─ Super Strength = NO?
+        ├─ Team Member = YES? (samples: 76)
+          ├─ Enhanced Senses = YES? (samples: 24)
+            GUESS: Captain Marvel
+               (samples: 12, confidence: 33.3%)
+               Path: Genre: Marvel=YES → Super Agility=YES → Uses Gadgets=YES → Super Strength=NO → Team Member=YES → Enhanced Senses=YES → 
+
+          └─ Enhanced Senses = NO?
+            GUESS: Green Lantern
+               (samples: 12, confidence: 33.3%)
+               Path: Genre: Marvel=YES → Super Agility=YES → Uses Gadgets=YES → Super Strength=NO → Team Member=YES → Enhanced Senses=NO → 
+
+        └─ Team Member = NO?
+          ├─ Enhanced Senses = YES? (samples: 52)
+            GUESS: Jessica Jones
+               (samples: 12, confidence: 33.3%)
+               Path: Genre: Marvel=YES → Super Agility=YES → Uses Gadgets=YES → Super Strength=NO → Team Member=NO → Enhanced Senses=YES → 
+
+          └─ Enhanced Senses = NO?
+            GUESS: Iron Man
+               (samples: 40, confidence: 10.0%)
+               Path: Genre: Marvel=YES → Super Agility=YES → Uses Gadgets=YES → Super Strength=NO → Team Member=NO → Enhanced Senses=NO → 
+
+    └─ Uses Gadgets = NO?
+      ├─ Enhanced Senses = YES? (samples: 48)
+        ├─ Super Strength = YES? (samples: 28)
+          ├─ Team Member = YES? (samples: 24)
+            GUESS: Batgirl
+               (samples: 16, confidence: 25.0%)
+               Path: Genre: Marvel=YES → Super Agility=YES → Uses Gadgets=NO → Enhanced Senses=YES → Super Strength=YES → Team Member=YES → 
+
+          └─ Team Member = NO?
+            GUESS: Spider-Man
+               (samples: 8, confidence: 50.0%)
+               Path: Genre: Marvel=YES → Super Agility=YES → Uses Gadgets=NO → Enhanced Senses=YES → Super Strength=YES → Team Member=NO → 
+
+        └─ Super Strength = NO?
+          GUESS: Booster Gold
+             (samples: 4, confidence: 100.0%)
+             Path: Genre: Marvel=YES → Super Agility=YES → Uses Gadgets=NO → Enhanced Senses=YES → Super Strength=NO → 
+
+      └─ Enhanced Senses = NO?
+        ├─ Super Strength = YES? (samples: 20)
+          GUESS: Green Arrow
+             (samples: 4, confidence: 100.0%)
+             Path: Genre: Marvel=YES → Super Agility=YES → Uses Gadgets=NO → Enhanced Senses=NO → Super Strength=YES → 
+
+        └─ Super Strength = NO?
+          ├─ Team Member = YES? (samples: 16)
+            GUESS: Nightwing
+               (samples: 12, confidence: 33.3%)
+               Path: Genre: Marvel=YES → Super Agility=YES → Uses Gadgets=NO → Enhanced Senses=NO → Super Strength=NO → Team Member=YES → 
+
+          └─ Team Member = NO?
+            GUESS: Beast Boy
+               (samples: 4, confidence: 100.0%)
+               Path: Genre: Marvel=YES → Super Agility=YES → Uses Gadgets=NO → Enhanced Senses=NO → Super Strength=NO → Team Member=NO → 
+
+  └─ Super Agility = NO?
+    ├─ Team Member = YES? (samples: 96)
+      ├─ Super Strength = YES? (samples: 36)
+        ├─ Enhanced Senses = YES? (samples: 24)
+          GUESS: Ant-Man
+             (samples: 16, confidence: 25.0%)
+             Path: Genre: Marvel=YES → Super Agility=NO → Team Member=YES → Super Strength=YES → Enhanced Senses=YES → 
+
+        └─ Enhanced Senses = NO?
+          ├─ Uses Gadgets = YES? (samples: 8)
+            GUESS: Two-Face
+               (samples: 4, confidence: 100.0%)
+               Path: Genre: Marvel=YES → Super Agility=NO → Team Member=YES → Super Strength=YES → Enhanced Senses=NO → Uses Gadgets=YES → 
+
+          └─ Uses Gadgets = NO?
+            GUESS: Black Adam
+               (samples: 4, confidence: 100.0%)
+               Path: Genre: Marvel=YES → Super Agility=NO → Team Member=YES → Super Strength=YES → Enhanced Senses=NO → Uses Gadgets=NO → 
+
+      └─ Super Strength = NO?
+        ├─ Enhanced Senses = YES? (samples: 12)
+          GUESS: Stargirl
+             (samples: 4, confidence: 100.0%)
+             Path: Genre: Marvel=YES → Super Agility=NO → Team Member=YES → Super Strength=NO → Enhanced Senses=YES → 
+
+        └─ Enhanced Senses = NO?
+          GUESS: Thor
+             (samples: 8, confidence: 50.0%)
+             Path: Genre: Marvel=YES → Super Agility=NO → Team Member=YES → Super Strength=NO → Enhanced Senses=NO → 
+
+    └─ Team Member = NO?
+      ├─ Super Strength = YES? (samples: 60)
+        ├─ Uses Gadgets = YES? (samples: 56)
+          ├─ Enhanced Senses = YES? (samples: 16)
+            GUESS: Constantine
+               (samples: 4, confidence: 100.0%)
+               Path: Genre: Marvel=YES → Super Agility=NO → Team Member=NO → Super Strength=YES → Uses Gadgets=YES → Enhanced Senses=YES → 
+
+          └─ Enhanced Senses = NO?
+            GUESS: Captain America
+               (samples: 12, confidence: 33.3%)
+               Path: Genre: Marvel=YES → Super Agility=NO → Team Member=NO → Super Strength=YES → Uses Gadgets=YES → Enhanced Senses=NO → 
+
+        └─ Uses Gadgets = NO?
+          ├─ Enhanced Senses = YES? (samples: 40)
+            GUESS: Hulk
+               (samples: 28, confidence: 14.3%)
+               Path: Genre: Marvel=YES → Super Agility=NO → Team Member=NO → Super Strength=YES → Uses Gadgets=NO → Enhanced Senses=YES → 
+
+          └─ Enhanced Senses = NO?
+            GUESS: Black Widow
+               (samples: 12, confidence: 33.3%)
+               Path: Genre: Marvel=YES → Super Agility=NO → Team Member=NO → Super Strength=YES → Uses Gadgets=NO → Enhanced Senses=NO → 
+
+      └─ Super Strength = NO?
+        GUESS: Spider-Gwen
+           (samples: 4, confidence: 100.0%)
+           Path: Genre: Marvel=YES → Super Agility=NO → Team Member=NO → Super Strength=NO → 
+
+└─ Genre: Marvel = NO?
+  ├─ Super Agility = YES? (samples: 284)
+    ├─ Enhanced Senses = YES? (samples: 132)
+      ├─ Team Member = YES? (samples: 76)
+        ├─ Uses Gadgets = YES? (samples: 40)
+          ├─ Super Strength = YES? (samples: 20)
+            GUESS: Mystique
+               (samples: 4, confidence: 100.0%)
+               Path: Genre: Marvel=NO → Super Agility=YES → Enhanced Senses=YES → Team Member=YES → Uses Gadgets=YES → Super Strength=YES → 
+
+          └─ Super Strength = NO?
+            GUESS: Storm
+               (samples: 16, confidence: 25.0%)
+               Path: Genre: Marvel=NO → Super Agility=YES → Enhanced Senses=YES → Team Member=YES → Uses Gadgets=YES → Super Strength=NO → 
+
+        └─ Uses Gadgets = NO?
+          ├─ Super Strength = YES? (samples: 20)
+            GUESS: Poison Ivy
+               (samples: 4, confidence: 100.0%)
+               Path: Genre: Marvel=NO → Super Agility=YES → Enhanced Senses=YES → Team Member=YES → Uses Gadgets=NO → Super Strength=YES → 
+
+          └─ Super Strength = NO?
+            GUESS: Daredevil
+               (samples: 16, confidence: 25.0%)
+               Path: Genre: Marvel=NO → Super Agility=YES → Enhanced Senses=YES → Team Member=YES → Uses Gadgets=NO → Super Strength=NO → 
+
+      └─ Team Member = NO?
+        ├─ Super Strength = YES? (samples: 36)
+          ├─ Uses Gadgets = YES? (samples: 32)
+            GUESS: Iron Fist
+               (samples: 24, confidence: 16.7%)
+               Path: Genre: Marvel=NO → Super Agility=YES → Enhanced Senses=YES → Team Member=NO → Super Strength=YES → Uses Gadgets=YES → 
+
+          └─ Uses Gadgets = NO?
+            GUESS: Batwoman
+               (samples: 8, confidence: 50.0%)
+               Path: Genre: Marvel=NO → Super Agility=YES → Enhanced Senses=YES → Team Member=NO → Super Strength=YES → Uses Gadgets=NO → 
+
+        └─ Super Strength = NO?
+          GUESS: Zatanna
+             (samples: 4, confidence: 100.0%)
+             Path: Genre: Marvel=NO → Super Agility=YES → Enhanced Senses=YES → Team Member=NO → Super Strength=NO → 
+
+    └─ Enhanced Senses = NO?
+      ├─ Team Member = YES? (samples: 56)
+        ├─ Uses Gadgets = YES? (samples: 28)
+          GUESS: Batman
+             (samples: 20, confidence: 20.0%)
+             Path: Genre: Marvel=NO → Super Agility=YES → Enhanced Senses=NO → Team Member=YES → Uses Gadgets=YES → 
+
+        └─ Uses Gadgets = NO?
+          GUESS: Wonder Woman
+             (samples: 8, confidence: 50.0%)
+             Path: Genre: Marvel=NO → Super Agility=YES → Enhanced Senses=NO → Team Member=YES → Uses Gadgets=NO → 
+
+      └─ Team Member = NO?
+        ├─ Super Strength = YES? (samples: 28)
+          GUESS: Starfire
+             (samples: 4, confidence: 100.0%)
+             Path: Genre: Marvel=NO → Super Agility=YES → Enhanced Senses=NO → Team Member=NO → Super Strength=YES → 
+
+        └─ Super Strength = NO?
+          GUESS: Supergirl
+             (samples: 24, confidence: 16.7%)
+             Path: Genre: Marvel=NO → Super Agility=YES → Enhanced Senses=NO → Team Member=NO → Super Strength=NO → 
+
+  └─ Super Agility = NO?
+    ├─ Team Member = YES? (samples: 152)
+      ├─ Super Strength = YES? (samples: 80)
+        ├─ Enhanced Senses = YES? (samples: 60)
+          ├─ Uses Gadgets = YES? (samples: 32)
+            GUESS: Cyclops
+               (samples: 4, confidence: 100.0%)
+               Path: Genre: Marvel=NO → Super Agility=NO → Team Member=YES → Super Strength=YES → Enhanced Senses=YES → Uses Gadgets=YES → 
+
+          └─ Uses Gadgets = NO?
+            GUESS: Luke Cage
+               (samples: 28, confidence: 14.3%)
+               Path: Genre: Marvel=NO → Super Agility=NO → Team Member=YES → Super Strength=YES → Enhanced Senses=YES → Uses Gadgets=NO → 
+
+        └─ Enhanced Senses = NO?
+          ├─ Uses Gadgets = YES? (samples: 28)
+            GUESS: Black Panther
+               (samples: 8, confidence: 50.0%)
+               Path: Genre: Marvel=NO → Super Agility=NO → Team Member=YES → Super Strength=YES → Enhanced Senses=NO → Uses Gadgets=YES → 
+
+          └─ Uses Gadgets = NO?
+            GUESS: Cyborg
+               (samples: 20, confidence: 20.0%)
+               Path: Genre: Marvel=NO → Super Agility=NO → Team Member=YES → Super Strength=YES → Enhanced Senses=NO → Uses Gadgets=NO → 
+
+      └─ Super Strength = NO?
+        ├─ Uses Gadgets = YES? (samples: 20)
+          GUESS: Atom
+             (samples: 12, confidence: 33.3%)
+             Path: Genre: Marvel=NO → Super Agility=NO → Team Member=YES → Super Strength=NO → Uses Gadgets=YES → 
+
+        └─ Uses Gadgets = NO?
+          GUESS: Hawkman
+             (samples: 8, confidence: 50.0%)
+             Path: Genre: Marvel=NO → Super Agility=NO → Team Member=YES → Super Strength=NO → Uses Gadgets=NO → 
+
+    └─ Team Member = NO?
+      ├─ Super Strength = YES? (samples: 72)
+        ├─ Enhanced Senses = YES? (samples: 44)
+          ├─ Uses Gadgets = YES? (samples: 16)
+            GUESS: Quicksilver
+               (samples: 4, confidence: 100.0%)
+               Path: Genre: Marvel=NO → Super Agility=NO → Team Member=NO → Super Strength=YES → Enhanced Senses=YES → Uses Gadgets=YES → 
+
+          └─ Uses Gadgets = NO?
+            GUESS: Superman
+               (samples: 12, confidence: 33.3%)
+               Path: Genre: Marvel=NO → Super Agility=NO → Team Member=NO → Super Strength=YES → Enhanced Senses=YES → Uses Gadgets=NO → 
+
+        └─ Enhanced Senses = NO?
+          ├─ Uses Gadgets = YES? (samples: 28)
+            GUESS: Loki
+               (samples: 12, confidence: 33.3%)
+               Path: Genre: Marvel=NO → Super Agility=NO → Team Member=NO → Super Strength=YES → Enhanced Senses=NO → Uses Gadgets=YES → 
+
+          └─ Uses Gadgets = NO?
+            GUESS: Black Canary
+               (samples: 16, confidence: 25.0%)
+               Path: Genre: Marvel=NO → Super Agility=NO → Team Member=NO → Super Strength=YES → Enhanced Senses=NO → Uses Gadgets=NO → 
+
+      └─ Super Strength = NO?
+        ├─ Uses Gadgets = YES? (samples: 28)
+          GUESS: Red Hood
+             (samples: 12, confidence: 33.3%)
+             Path: Genre: Marvel=NO → Super Agility=NO → Team Member=NO → Super Strength=NO → Uses Gadgets=YES → 
+
+        └─ Uses Gadgets = NO?
+          GUESS: Shazam
+             (samples: 16, confidence: 25.0%)
+             Path: Genre: Marvel=NO → Super Agility=NO → Team Member=NO → Super Strength=NO → Uses Gadgets=NO → 
+
+
+================================================================================
+FEATURE IMPORTANCE (top 10)
+================================================================================
+ 1. uses_gadgets                   0.2727
+ 2. super_strength                 0.2500
+ 3. enhanced_senses                0.2273
+ 4. team_member                    0.1818
+ 5. super_agility                  0.0455
+ 6. genre_Marvel                   0.0227
+ 7. genre_DC                       0.0000

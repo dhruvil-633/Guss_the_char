@@ -1,0 +1,292 @@
+SKLEARN TEXT REPRESENTATION
+================================================================================
+
+|--- Male <= 0.50
+|   |--- Telepathy <= 0.50
+|   |   |--- Shapeshifter <= 0.50
+|   |   |   |--- Trained Assassin <= 0.50
+|   |   |   |   |--- Ranged Fighter <= 0.50
+|   |   |   |   |   |--- Uses Gadgets <= 0.50
+|   |   |   |   |   |   |--- Experiment Origin <= 0.50
+|   |   |   |   |   |   |   |--- Immortal <= 0.50
+|   |   |   |   |   |   |   |   |--- Mutant <= 0.50
+|   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |--- Mutant >  0.50
+|   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |--- Immortal >  0.50
+|   |   |   |   |   |   |   |   |--- Uses Magic <= 0.50
+|   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- Uses Magic >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: 130.0
+|   |   |   |   |   |   |--- Experiment Origin >  0.50
+|   |   |   |   |   |   |   |--- Superhero <= 0.50
+|   |   |   |   |   |   |   |   |--- class: 84.0
+|   |   |   |   |   |   |   |--- Superhero >  0.50
+|   |   |   |   |   |   |   |   |--- Leader <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: 104.0
+|   |   |   |   |   |   |   |   |--- Leader >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: 112.0
+|   |   |   |   |   |--- Uses Gadgets >  0.50
+|   |   |   |   |   |   |--- Reformed Villain <= 0.50
+|   |   |   |   |   |   |   |--- Tech Enhanced <= 0.50
+|   |   |   |   |   |   |   |   |--- Enhanced Senses <= 0.50
+|   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- Enhanced Senses >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: 108.0
+|   |   |   |   |   |   |   |--- Tech Enhanced >  0.50
+|   |   |   |   |   |   |   |   |--- class: 111.0
+|   |   |   |   |   |   |--- Reformed Villain >  0.50
+|   |   |   |   |   |   |   |--- Genre Marvel <= 0.50
+|   |   |   |   |   |   |   |   |--- class: 25.0
+|   |   |   |   |   |   |   |--- Genre Marvel >  0.50
+|   |   |   |   |   |   |   |   |--- class: 13.0
+|   |   |   |   |--- Ranged Fighter >  0.50
+|   |   |   |   |   |--- Anti Hero <= 0.50
+|   |   |   |   |   |   |--- class: 127.0
+|   |   |   |   |   |--- Anti Hero >  0.50
+|   |   |   |   |   |   |--- class: 51.0
+|   |   |   |--- Trained Assassin >  0.50
+|   |   |   |   |--- Superhero <= 0.50
+|   |   |   |   |   |--- class: 77.0
+|   |   |   |   |--- Superhero >  0.50
+|   |   |   |   |   |--- Genre Marvel <= 0.50
+|   |   |   |   |   |   |--- class: 56.0
+|   |   |   |   |   |--- Genre Marvel >  0.50
+|   |   |   |   |   |   |--- Anti Hero <= 0.50
+|   |   |   |   |   |   |   |--- class: 16.0
+|   |   |   |   |   |   |--- Anti Hero >  0.50
+|   |   |   |   |   |   |   |--- class: 41.0
+|   |   |--- Shapeshifter >  0.50
+|   |   |   |--- class: 76.0
+|   |--- Telepathy >  0.50
+|   |   |--- Mutant <= 0.50
+|   |   |   |--- Experiment Origin <= 0.50
+|   |   |   |   |--- class: 90.0
+|   |   |   |--- Experiment Origin >  0.50
+|   |   |   |   |--- class: 61.0
+|   |   |--- Mutant >  0.50
+|   |   |   |--- Reformed Villain <= 0.50
+|   |   |   |   |--- class: 60.0
+|   |   |   |--- Reformed Villain >  0.50
+|   |   |   |   |--- class: 102.0
+|--- Male >  0.50
+|   |--- Avenger <= 0.50
+|   |   |--- Stealth Expert <= 0.50
+|   |   |   |--- Super Strength <= 0.50
+|   |   |   |   |--- Wears Armor <= 0.50
+|   |   |   |   |   |--- Team Member <= 0.50
+|   |   |   |   |   |   |--- Solo Hero <= 0.50
+|   |   |   |   |   |   |   |--- Trained Assassin <= 0.50
+|   |   |   |   |   |   |   |   |--- Mystic Power Source <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: 69.0
+|   |   |   |   |   |   |   |   |--- Mystic Power Source >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: 58.0
+|   |   |   |   |   |   |   |--- Trained Assassin >  0.50
+|   |   |   |   |   |   |   |   |--- class: 32.0
+|   |   |   |   |   |   |--- Solo Hero >  0.50
+|   |   |   |   |   |   |   |--- Dual Identity <= 0.50
+|   |   |   |   |   |   |   |   |--- Tech Genius <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: 106.0
+|   |   |   |   |   |   |   |   |--- Tech Genius >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: 62.0
+|   |   |   |   |   |   |   |--- Dual Identity >  0.50
+|   |   |   |   |   |   |   |   |--- Super Agility <= 0.50
+|   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |--- Super Agility >  0.50
+|   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |--- Team Member >  0.50
+|   |   |   |   |   |   |--- Leader <= 0.50
+|   |   |   |   |   |   |   |--- Enhanced Senses <= 0.50
+|   |   |   |   |   |   |   |   |--- Wears Mask <= 0.50
+|   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- Wears Mask >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: 4.0
+|   |   |   |   |   |   |   |--- Enhanced Senses >  0.50
+|   |   |   |   |   |   |   |   |--- class: 9.0
+|   |   |   |   |   |   |--- Leader >  0.50
+|   |   |   |   |   |   |   |--- Genre Marvel <= 0.50
+|   |   |   |   |   |   |   |   |--- Regeneration <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: 50.0
+|   |   |   |   |   |   |   |   |--- Regeneration >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: 45.0
+|   |   |   |   |   |   |   |--- Genre Marvel >  0.50
+|   |   |   |   |   |   |   |   |--- class: 86.0
+|   |   |   |   |--- Wears Armor >  0.50
+|   |   |   |   |   |--- Ranged Fighter <= 0.50
+|   |   |   |   |   |   |--- class: 36.0
+|   |   |   |   |   |--- Ranged Fighter >  0.50
+|   |   |   |   |   |   |--- class: 18.0
+|   |   |   |--- Super Strength >  0.50
+|   |   |   |   |--- Tech Enhanced <= 0.50
+|   |   |   |   |   |--- Wears Armor <= 0.50
+|   |   |   |   |   |   |--- Mystic Power Source <= 0.50
+|   |   |   |   |   |   |   |--- Energy Projection <= 0.50
+|   |   |   |   |   |   |   |   |--- Tech Genius <= 0.50
+|   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |--- Tech Genius >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: 64.0
+|   |   |   |   |   |   |   |--- Energy Projection >  0.50
+|   |   |   |   |   |   |   |   |--- Alien Origin <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: 44.0
+|   |   |   |   |   |   |   |   |--- Alien Origin >  0.50
+|   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |--- Mystic Power Source >  0.50
+|   |   |   |   |   |   |   |--- Justice League <= 0.50
+|   |   |   |   |   |   |   |   |--- Energy Projection <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: 116.0
+|   |   |   |   |   |   |   |   |--- Energy Projection >  0.50
+|   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |--- Justice League >  0.50
+|   |   |   |   |   |   |   |   |--- Enhanced Senses <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: 107.0
+|   |   |   |   |   |   |   |   |--- Enhanced Senses >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: 103.0
+|   |   |   |   |   |--- Wears Armor >  0.50
+|   |   |   |   |   |   |--- Justice League <= 0.50
+|   |   |   |   |   |   |   |--- Dual Identity <= 0.50
+|   |   |   |   |   |   |   |   |--- Genre Marvel <= 0.50
+|   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- Genre Marvel >  0.50
+|   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |--- Dual Identity >  0.50
+|   |   |   |   |   |   |   |   |--- Alien Origin <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: 63.0
+|   |   |   |   |   |   |   |   |--- Alien Origin >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: 81.0
+|   |   |   |   |   |   |--- Justice League >  0.50
+|   |   |   |   |   |   |   |--- Uses Magic <= 0.50
+|   |   |   |   |   |   |   |   |--- class: 54.0
+|   |   |   |   |   |   |   |--- Uses Magic >  0.50
+|   |   |   |   |   |   |   |   |--- class: 35.0
+|   |   |   |   |--- Tech Enhanced >  0.50
+|   |   |   |   |   |--- Uses Magic <= 0.50
+|   |   |   |   |   |   |--- Genre Marvel <= 0.50
+|   |   |   |   |   |   |   |--- Shapeshifter <= 0.50
+|   |   |   |   |   |   |   |   |--- Martial Artist <= 0.50
+|   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- Martial Artist >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: 71.0
+|   |   |   |   |   |   |   |--- Shapeshifter >  0.50
+|   |   |   |   |   |   |   |   |--- class: 20.0
+|   |   |   |   |   |   |--- Genre Marvel >  0.50
+|   |   |   |   |   |   |   |--- class: 122.0
+|   |   |   |   |   |--- Uses Magic >  0.50
+|   |   |   |   |   |   |--- From Earth <= 0.50
+|   |   |   |   |   |   |   |--- class: 2.0
+|   |   |   |   |   |   |--- From Earth >  0.50
+|   |   |   |   |   |   |   |--- class: 34.0
+|   |   |--- Stealth Expert >  0.50
+|   |   |   |--- Mystic Power Source <= 0.50
+|   |   |   |   |--- Energy Projection <= 0.50
+|   |   |   |   |   |--- Regeneration <= 0.50
+|   |   |   |   |   |   |--- Tech Genius <= 0.50
+|   |   |   |   |   |   |   |--- Trained Assassin <= 0.50
+|   |   |   |   |   |   |   |   |--- Experiment Origin <= 0.50
+|   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- Experiment Origin >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: 5.0
+|   |   |   |   |   |   |   |--- Trained Assassin >  0.50
+|   |   |   |   |   |   |   |   |--- Superhero <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: 117.0
+|   |   |   |   |   |   |   |   |--- Superhero >  0.50
+|   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |--- Tech Genius >  0.50
+|   |   |   |   |   |   |   |--- Scientist <= 0.50
+|   |   |   |   |   |   |   |   |--- Military Background <= 0.50
+|   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- Military Background >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: 78.0
+|   |   |   |   |   |   |   |--- Scientist >  0.50
+|   |   |   |   |   |   |   |   |--- class: 92.0
+|   |   |   |   |   |--- Regeneration >  0.50
+|   |   |   |   |   |   |--- Shapeshifter <= 0.50
+|   |   |   |   |   |   |   |--- Wears Mask <= 0.50
+|   |   |   |   |   |   |   |   |--- Mutant <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: 17.0
+|   |   |   |   |   |   |   |   |--- Mutant >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: 99.0
+|   |   |   |   |   |   |   |--- Wears Mask >  0.50
+|   |   |   |   |   |   |   |   |--- Military Background <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: 30.0
+|   |   |   |   |   |   |   |   |--- Military Background >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: 33.0
+|   |   |   |   |   |   |--- Shapeshifter >  0.50
+|   |   |   |   |   |   |   |--- class: 123.0
+|   |   |   |   |--- Energy Projection >  0.50
+|   |   |   |   |   |--- Uses Weapon <= 0.50
+|   |   |   |   |   |   |--- class: 72.0
+|   |   |   |   |   |--- Uses Weapon >  0.50
+|   |   |   |   |   |   |--- Wears Armor <= 0.50
+|   |   |   |   |   |   |   |--- class: 94.0
+|   |   |   |   |   |   |--- Wears Armor >  0.50
+|   |   |   |   |   |   |   |--- class: 14.0
+|   |   |   |--- Mystic Power Source >  0.50
+|   |   |   |   |--- Genre Dc <= 0.50
+|   |   |   |   |   |--- Tech Genius <= 0.50
+|   |   |   |   |   |   |--- class: 74.0
+|   |   |   |   |   |--- Tech Genius >  0.50
+|   |   |   |   |   |   |--- Immortal <= 0.50
+|   |   |   |   |   |   |   |--- class: 75.0
+|   |   |   |   |   |   |--- Immortal >  0.50
+|   |   |   |   |   |   |   |--- class: 119.0
+|   |   |   |   |--- Genre Dc >  0.50
+|   |   |   |   |   |--- Leader <= 0.50
+|   |   |   |   |   |   |--- class: 101.0
+|   |   |   |   |   |--- Leader >  0.50
+|   |   |   |   |   |   |--- class: 89.0
+|   |--- Avenger >  0.50
+|   |   |--- From Earth <= 0.50
+|   |   |   |--- Regeneration <= 0.50
+|   |   |   |   |--- class: 120.0
+|   |   |   |--- Regeneration >  0.50
+|   |   |   |   |--- class: 124.0
+|   |   |--- From Earth >  0.50
+|   |   |   |--- Ranged Fighter <= 0.50
+|   |   |   |   |--- Telepathy <= 0.50
+|   |   |   |   |   |--- Regeneration <= 0.50
+|   |   |   |   |   |   |--- Military Background <= 0.50
+|   |   |   |   |   |   |   |--- Tech Enhanced <= 0.50
+|   |   |   |   |   |   |   |   |--- Super Agility <= 0.50
+|   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- Super Agility >  0.50
+|   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |--- Tech Enhanced >  0.50
+|   |   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |--- Military Background >  0.50
+|   |   |   |   |   |   |   |--- Enhanced Senses <= 0.50
+|   |   |   |   |   |   |   |   |--- class: 43.0
+|   |   |   |   |   |   |   |--- Enhanced Senses >  0.50
+|   |   |   |   |   |   |   |   |--- class: 42.0
+|   |   |   |   |   |--- Regeneration >  0.50
+|   |   |   |   |   |   |--- Super Strength <= 0.50
+|   |   |   |   |   |   |   |--- class: 88.0
+|   |   |   |   |   |   |--- Super Strength >  0.50
+|   |   |   |   |   |   |   |--- Tech Genius <= 0.50
+|   |   |   |   |   |   |   |   |--- Martial Artist <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: 55.0
+|   |   |   |   |   |   |   |   |--- Martial Artist >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: 129.0
+|   |   |   |   |   |   |   |--- Tech Genius >  0.50
+|   |   |   |   |   |   |   |   |--- Military Background <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: 109.0
+|   |   |   |   |   |   |   |   |--- Military Background >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: 21.0
+|   |   |   |   |--- Telepathy >  0.50
+|   |   |   |   |   |--- class: 37.0
+|   |   |   |--- Ranged Fighter >  0.50
+|   |   |   |   |--- Leader <= 0.50
+|   |   |   |   |   |--- Uses Gadgets <= 0.50
+|   |   |   |   |   |   |--- class: 46.0
+|   |   |   |   |   |--- Uses Gadgets >  0.50
+|   |   |   |   |   |   |--- Trained Assassin <= 0.50
+|   |   |   |   |   |   |   |--- class: 126.0
+|   |   |   |   |   |   |--- Trained Assassin >  0.50
+|   |   |   |   |   |   |   |--- Stealth Expert <= 0.50
+|   |   |   |   |   |   |   |   |--- class: 52.0
+|   |   |   |   |   |   |   |--- Stealth Expert >  0.50
+|   |   |   |   |   |   |   |   |--- class: 128.0
+|   |   |   |   |--- Leader >  0.50
+|   |   |   |   |   |--- Experiment Origin <= 0.50
+|   |   |   |   |   |   |--- class: 59.0
+|   |   |   |   |   |--- Experiment Origin >  0.50
+|   |   |   |   |   |   |--- class: 29.0

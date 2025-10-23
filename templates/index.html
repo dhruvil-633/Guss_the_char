@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUESS THE HERO</title>
+  <link rel="icon" href="{{ url_for('static', filename='assets/favicon.png') }}" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css', v=1) }}">
+</head>
+<body>
+  <div class="bg-animated" id="bg-animated"></div>
+
+  <div class="container">
+    <!-- Intro Screen -->
+    <div id="intro">
+      <div class="logo">GUESS THE HERO</div>
+      <div class="tagline">I can read your mind in up to 40 questions</div>
+      <div class="quote-box">
+        <p>💭 Think of any superhero from Marvel or DC</p>
+        <p>⚡ Answer simple yes/no questions</p>
+        <p>🎯 Watch me guess your hero with scary accuracy</p>
+      </div>
+      <button class="start-btn" id="start-btn">START THE CHALLENGE</button>
+    </div>
+
+    <!-- Character Display (read-only) -->
+    <div id="char-list" class="hidden">
+      <h2 class="section-title">Available Heroes</h2>
+      <div class="char-container">
+        <div id="characters-grid"></div>
+      </div>
+      <button class="ok-btn" id="ok-btn">START GAME</button>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game" class="hidden">
+      <div class="progress-bar">
+        <div class="progress-info">
+          <div class="progress-item">
+            <i class="fas fa-layer-group"></i>
+            <span>Round <span id="round-num">1</span></span>
+          </div>
+          <div class="progress-item">
+            <i class="fas fa-question-circle"></i>
+            <span>Question <span id="q-num">1</span>/<span id="q-total">7</span></span>
+          </div>
+        </div>
+      </div>
+
+      <div id="round1" class="round hidden"></div>
+      <div id="round2" class="round hidden"></div>
+      <div id="round3" class="round hidden"></div>
+      <div id="round4" class="round hidden"></div>
+      <div id="round5" class="round hidden"></div>
+      <div id="round6" class="round hidden"></div>
+      <div id="round7" class="round hidden"></div>
+
+      <button class="back-btn hidden" id="back-btn">
+        <i class="fas fa-arrow-left"></i> BACK
+      </button>
+    </div>
+  </div>
+
+  <script>
+  window.GAME_URLS = {
+    victory: "{{ victory_url | safe }}",
+    failed: "{{ failed_url | safe }}"
+  };
+  </script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

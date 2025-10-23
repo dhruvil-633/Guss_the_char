@@ -1,0 +1,343 @@
+SKLEARN TEXT REPRESENTATION
+================================================================================
+
+|--- Anti Hero <= 0.50
+|   |--- Genre Dc <= 0.50
+|   |   |--- Team Member <= 0.50
+|   |   |   |--- Ranged Fighter <= 0.50
+|   |   |   |   |--- Tech Genius <= 0.50
+|   |   |   |   |   |--- Solo Hero <= 0.50
+|   |   |   |   |   |   |--- Uses Magic <= 0.50
+|   |   |   |   |   |   |   |--- class: Iron Fist
+|   |   |   |   |   |   |--- Uses Magic >  0.50
+|   |   |   |   |   |   |   |--- class: Loki
+|   |   |   |   |   |--- Solo Hero >  0.50
+|   |   |   |   |   |   |--- Superhero <= 0.50
+|   |   |   |   |   |   |   |--- Regeneration <= 0.50
+|   |   |   |   |   |   |   |   |--- Super Strength <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: Electro
+|   |   |   |   |   |   |   |   |--- Super Strength >  0.50
+|   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |--- Regeneration >  0.50
+|   |   |   |   |   |   |   |   |--- Enhanced Senses <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: Sandman
+|   |   |   |   |   |   |   |   |--- Enhanced Senses >  0.50
+|   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |--- Superhero >  0.50
+|   |   |   |   |   |   |   |--- class: Silver Surfer
+|   |   |   |   |--- Tech Genius >  0.50
+|   |   |   |   |   |--- Uses Gadgets <= 0.50
+|   |   |   |   |   |   |--- Super Agility <= 0.50
+|   |   |   |   |   |   |   |--- class: Ego
+|   |   |   |   |   |   |--- Super Agility >  0.50
+|   |   |   |   |   |   |   |--- class: Daredevil
+|   |   |   |   |   |--- Uses Gadgets >  0.50
+|   |   |   |   |   |   |--- Flies <= 0.50
+|   |   |   |   |   |   |   |--- Scientist <= 0.50
+|   |   |   |   |   |   |   |   |--- class: Kingpin
+|   |   |   |   |   |   |   |--- Scientist >  0.50
+|   |   |   |   |   |   |   |   |--- Super Agility <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: Red Skull
+|   |   |   |   |   |   |   |   |--- Super Agility >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: Doctor Octopus
+|   |   |   |   |   |   |--- Flies >  0.50
+|   |   |   |   |   |   |   |--- Super Strength <= 0.50
+|   |   |   |   |   |   |   |   |--- class: Vulture
+|   |   |   |   |   |   |   |--- Super Strength >  0.50
+|   |   |   |   |   |   |   |   |--- class: Thanos
+|   |   |   |--- Ranged Fighter >  0.50
+|   |   |   |   |--- Super Agility <= 0.50
+|   |   |   |   |   |--- Regeneration <= 0.50
+|   |   |   |   |   |   |--- class: Doctor Doom
+|   |   |   |   |   |--- Regeneration >  0.50
+|   |   |   |   |   |   |--- class: Ultron
+|   |   |   |   |--- Super Agility >  0.50
+|   |   |   |   |   |--- Leader <= 0.50
+|   |   |   |   |   |   |--- Stealth Expert <= 0.50
+|   |   |   |   |   |   |   |--- class: Green Goblin
+|   |   |   |   |   |   |--- Stealth Expert >  0.50
+|   |   |   |   |   |   |   |--- class: Mysterio
+|   |   |   |   |   |--- Leader >  0.50
+|   |   |   |   |   |   |--- class: The Mandarin
+|   |   |--- Team Member >  0.50
+|   |   |   |--- Stealth Expert <= 0.50
+|   |   |   |   |--- Regeneration <= 0.50
+|   |   |   |   |   |--- Enhanced Senses <= 0.50
+|   |   |   |   |   |   |--- Scientist <= 0.50
+|   |   |   |   |   |   |   |--- Flies <= 0.50
+|   |   |   |   |   |   |   |   |--- Super Strength <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: Iceman
+|   |   |   |   |   |   |   |   |--- Super Strength >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: Colossus
+|   |   |   |   |   |   |   |--- Flies >  0.50
+|   |   |   |   |   |   |   |   |--- Ranged Fighter <= 0.50
+|   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |--- Ranged Fighter >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: War Machine
+|   |   |   |   |   |   |--- Scientist >  0.50
+|   |   |   |   |   |   |   |--- Martial Artist <= 0.50
+|   |   |   |   |   |   |   |   |--- Uses Gadgets <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: Professor X
+|   |   |   |   |   |   |   |   |--- Uses Gadgets >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: Iron Man
+|   |   |   |   |   |   |   |--- Martial Artist >  0.50
+|   |   |   |   |   |   |   |   |--- Tech Genius <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: Doctor Strange
+|   |   |   |   |   |   |   |   |--- Tech Genius >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: Wasp
+|   |   |   |   |   |--- Enhanced Senses >  0.50
+|   |   |   |   |   |   |--- Energy Projection <= 0.50
+|   |   |   |   |   |   |   |--- Super Strength <= 0.50
+|   |   |   |   |   |   |   |   |--- Uses Weapon <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: Falcon
+|   |   |   |   |   |   |   |   |--- Uses Weapon >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: Hawkeye
+|   |   |   |   |   |   |   |--- Super Strength >  0.50
+|   |   |   |   |   |   |   |   |--- class: Rogue
+|   |   |   |   |   |   |--- Energy Projection >  0.50
+|   |   |   |   |   |   |   |--- Wears Mask <= 0.50
+|   |   |   |   |   |   |   |   |--- Uses Magic <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: Captain Marvel
+|   |   |   |   |   |   |   |   |--- Uses Magic >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: Thor
+|   |   |   |   |   |   |   |--- Wears Mask >  0.50
+|   |   |   |   |   |   |   |   |--- class: Cyclops
+|   |   |   |   |--- Regeneration >  0.50
+|   |   |   |   |   |--- Tech Genius <= 0.50
+|   |   |   |   |   |   |--- Super Agility <= 0.50
+|   |   |   |   |   |   |   |--- class: She-Hulk
+|   |   |   |   |   |   |--- Super Agility >  0.50
+|   |   |   |   |   |   |   |--- class: Quicksilver
+|   |   |   |   |   |--- Tech Genius >  0.50
+|   |   |   |   |   |   |--- class: Vision
+|   |   |   |--- Stealth Expert >  0.50
+|   |   |   |   |--- Scientist <= 0.50
+|   |   |   |   |   |--- Male <= 0.50
+|   |   |   |   |   |   |--- Tech Genius <= 0.50
+|   |   |   |   |   |   |   |--- class: Black Widow
+|   |   |   |   |   |   |--- Tech Genius >  0.50
+|   |   |   |   |   |   |   |--- class: Spider-Gwen
+|   |   |   |   |   |--- Male >  0.50
+|   |   |   |   |   |   |--- Tech Genius <= 0.50
+|   |   |   |   |   |   |   |--- class: Nightcrawler
+|   |   |   |   |   |   |--- Tech Genius >  0.50
+|   |   |   |   |   |   |   |--- Ranged Fighter <= 0.50
+|   |   |   |   |   |   |   |   |--- Wears Armor <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: Captain America
+|   |   |   |   |   |   |   |   |--- Wears Armor >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: Black Panther
+|   |   |   |   |   |   |   |--- Ranged Fighter >  0.50
+|   |   |   |   |   |   |   |   |--- class: Nick Fury
+|   |   |   |   |--- Scientist >  0.50
+|   |   |   |   |   |--- Uses Gadgets <= 0.50
+|   |   |   |   |   |   |--- Enhanced Senses <= 0.50
+|   |   |   |   |   |   |   |--- class: Kitty Pryde
+|   |   |   |   |   |   |--- Enhanced Senses >  0.50
+|   |   |   |   |   |   |   |--- class: Spider-Man
+|   |   |   |   |   |--- Uses Gadgets >  0.50
+|   |   |   |   |   |   |--- Regeneration <= 0.50
+|   |   |   |   |   |   |   |--- class: Ant-Man
+|   |   |   |   |   |   |--- Regeneration >  0.50
+|   |   |   |   |   |   |   |--- class: Miles Morales
+|   |--- Genre Dc >  0.50
+|   |   |--- Regeneration <= 0.50
+|   |   |   |--- Flies <= 0.50
+|   |   |   |   |--- Experiment Origin <= 0.50
+|   |   |   |   |   |--- Leader <= 0.50
+|   |   |   |   |   |   |--- Enhanced Senses <= 0.50
+|   |   |   |   |   |   |   |--- Energy Projection <= 0.50
+|   |   |   |   |   |   |   |   |--- Team Member <= 0.50
+|   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |--- Team Member >  0.50
+|   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |--- Energy Projection >  0.50
+|   |   |   |   |   |   |   |   |--- class: Ocean Master
+|   |   |   |   |   |   |--- Enhanced Senses >  0.50
+|   |   |   |   |   |   |   |--- Ranged Fighter <= 0.50
+|   |   |   |   |   |   |   |   |--- class: Black Canary
+|   |   |   |   |   |   |   |--- Ranged Fighter >  0.50
+|   |   |   |   |   |   |   |   |--- Wears Armor <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: Green Arrow
+|   |   |   |   |   |   |   |   |--- Wears Armor >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: Black Manta
+|   |   |   |   |   |--- Leader >  0.50
+|   |   |   |   |   |   |--- Wears Armor <= 0.50
+|   |   |   |   |   |   |   |--- Martial Artist <= 0.50
+|   |   |   |   |   |   |   |   |--- Wears Mask <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: Lex Luthor
+|   |   |   |   |   |   |   |   |--- Wears Mask >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: Captain Cold
+|   |   |   |   |   |   |   |--- Martial Artist >  0.50
+|   |   |   |   |   |   |   |   |--- class: Aquaman
+|   |   |   |   |   |   |--- Wears Armor >  0.50
+|   |   |   |   |   |   |   |--- Uses Gadgets <= 0.50
+|   |   |   |   |   |   |   |   |--- class: Wonder Woman
+|   |   |   |   |   |   |   |--- Uses Gadgets >  0.50
+|   |   |   |   |   |   |   |   |--- class: Batman
+|   |   |   |   |--- Experiment Origin >  0.50
+|   |   |   |   |   |--- class: Bane
+|   |   |   |--- Flies >  0.50
+|   |   |   |   |--- Solo Hero <= 0.50
+|   |   |   |   |   |--- Justice League <= 0.50
+|   |   |   |   |   |   |--- Enhanced Senses <= 0.50
+|   |   |   |   |   |   |   |--- Uses Magic <= 0.50
+|   |   |   |   |   |   |   |   |--- class: Starfire
+|   |   |   |   |   |   |   |--- Uses Magic >  0.50
+|   |   |   |   |   |   |   |   |--- class: Raven
+|   |   |   |   |   |   |--- Enhanced Senses >  0.50
+|   |   |   |   |   |   |   |--- class: Superboy
+|   |   |   |   |   |--- Justice League >  0.50
+|   |   |   |   |   |   |--- Uses Weapon <= 0.50
+|   |   |   |   |   |   |   |--- Experiment Origin <= 0.50
+|   |   |   |   |   |   |   |   |--- Male <= 0.50
+|   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |--- Male >  0.50
+|   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |--- Experiment Origin >  0.50
+|   |   |   |   |   |   |   |   |--- class: Firestorm
+|   |   |   |   |   |   |--- Uses Weapon >  0.50
+|   |   |   |   |   |   |   |--- Martial Artist <= 0.50
+|   |   |   |   |   |   |   |   |--- Wears Mask <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: Booster Gold
+|   |   |   |   |   |   |   |   |--- Wears Mask >  0.50
+|   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |--- Martial Artist >  0.50
+|   |   |   |   |   |   |   |   |--- Scientist <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: Stargirl
+|   |   |   |   |   |   |   |   |--- Scientist >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: Blue Beetle
+|   |   |   |   |--- Solo Hero >  0.50
+|   |   |   |   |   |--- Immortal <= 0.50
+|   |   |   |   |   |   |--- class: Sinestro
+|   |   |   |   |   |--- Immortal >  0.50
+|   |   |   |   |   |   |--- class: Bizarro
+|   |   |--- Regeneration >  0.50
+|   |   |   |--- Martial Artist <= 0.50
+|   |   |   |   |--- Wears Armor <= 0.50
+|   |   |   |   |   |--- Team Member <= 0.50
+|   |   |   |   |   |   |--- Enhanced Senses <= 0.50
+|   |   |   |   |   |   |   |--- Flies <= 0.50
+|   |   |   |   |   |   |   |   |--- class: Swamp Thing
+|   |   |   |   |   |   |   |--- Flies >  0.50
+|   |   |   |   |   |   |   |   |--- class: Spectre
+|   |   |   |   |   |   |--- Enhanced Senses >  0.50
+|   |   |   |   |   |   |   |--- class: Brainiac
+|   |   |   |   |   |--- Team Member >  0.50
+|   |   |   |   |   |   |--- Wears Mask <= 0.50
+|   |   |   |   |   |   |   |--- Justice League <= 0.50
+|   |   |   |   |   |   |   |   |--- class: Beast Boy
+|   |   |   |   |   |   |   |--- Justice League >  0.50
+|   |   |   |   |   |   |   |   |--- class: Plastic Man
+|   |   |   |   |   |   |--- Wears Mask >  0.50
+|   |   |   |   |   |   |   |--- class: Flash
+|   |   |   |   |--- Wears Armor >  0.50
+|   |   |   |   |   |--- class: Cyborg
+|   |   |   |--- Martial Artist >  0.50
+|   |   |   |   |--- Flies <= 0.50
+|   |   |   |   |   |--- Ranged Fighter <= 0.50
+|   |   |   |   |   |   |--- Experiment Origin <= 0.50
+|   |   |   |   |   |   |   |--- Alien Origin <= 0.50
+|   |   |   |   |   |   |   |   |--- class: Metallo
+|   |   |   |   |   |   |   |--- Alien Origin >  0.50
+|   |   |   |   |   |   |   |   |--- class: Mongul
+|   |   |   |   |   |   |--- Experiment Origin >  0.50
+|   |   |   |   |   |   |   |--- Tech Genius <= 0.50
+|   |   |   |   |   |   |   |   |--- class: Doomsday
+|   |   |   |   |   |   |   |--- Tech Genius >  0.50
+|   |   |   |   |   |   |   |   |--- class: Reverse Flash
+|   |   |   |   |   |--- Ranged Fighter >  0.50
+|   |   |   |   |   |   |--- Enhanced Senses <= 0.50
+|   |   |   |   |   |   |   |--- class: Ra's al Ghul
+|   |   |   |   |   |   |--- Enhanced Senses >  0.50
+|   |   |   |   |   |   |   |--- class: Deathstroke
+|   |   |   |   |--- Flies >  0.50
+|   |   |   |   |   |--- Uses Magic <= 0.50
+|   |   |   |   |   |   |--- Uses Weapon <= 0.50
+|   |   |   |   |   |   |   |--- class: Martian Manhunter
+|   |   |   |   |   |   |--- Uses Weapon >  0.50
+|   |   |   |   |   |   |   |--- Leader <= 0.50
+|   |   |   |   |   |   |   |   |--- class: Hawkgirl
+|   |   |   |   |   |   |   |--- Leader >  0.50
+|   |   |   |   |   |   |   |   |--- class: Hawkman
+|   |   |   |   |   |--- Uses Magic >  0.50
+|   |   |   |   |   |   |--- class: Darkseid
+|--- Anti Hero >  0.50
+|   |--- Super Agility <= 0.50
+|   |   |--- Male <= 0.50
+|   |   |   |--- Genre Dc <= 0.50
+|   |   |   |   |--- class: Jessica Jones
+|   |   |   |--- Genre Dc >  0.50
+|   |   |   |   |--- class: Poison Ivy
+|   |   |--- Male >  0.50
+|   |   |   |--- Immortal <= 0.50
+|   |   |   |   |--- Solo Hero <= 0.50
+|   |   |   |   |   |--- Scientist <= 0.50
+|   |   |   |   |   |   |--- Martial Artist <= 0.50
+|   |   |   |   |   |   |   |--- class: Magneto
+|   |   |   |   |   |   |--- Martial Artist >  0.50
+|   |   |   |   |   |   |   |--- class: Luke Cage
+|   |   |   |   |   |--- Scientist >  0.50
+|   |   |   |   |   |   |--- class: Hulk
+|   |   |   |   |--- Solo Hero >  0.50
+|   |   |   |   |   |--- class: Two-Face
+|   |   |   |--- Immortal >  0.50
+|   |   |   |   |--- Regeneration <= 0.50
+|   |   |   |   |   |--- class: Black Adam
+|   |   |   |   |--- Regeneration >  0.50
+|   |   |   |   |   |--- Super Strength <= 0.50
+|   |   |   |   |   |   |--- class: Constantine
+|   |   |   |   |   |--- Super Strength >  0.50
+|   |   |   |   |   |   |--- class: Ghost Rider
+|   |--- Super Agility >  0.50
+|   |   |--- Wears Armor <= 0.50
+|   |   |   |--- Experiment Origin <= 0.50
+|   |   |   |   |--- Regeneration <= 0.50
+|   |   |   |   |   |--- Superhero <= 0.50
+|   |   |   |   |   |   |--- Ranged Fighter <= 0.50
+|   |   |   |   |   |   |   |--- Genre Dc <= 0.50
+|   |   |   |   |   |   |   |   |--- class: Black Cat
+|   |   |   |   |   |   |   |--- Genre Dc >  0.50
+|   |   |   |   |   |   |   |   |--- class: Catwoman
+|   |   |   |   |   |   |--- Ranged Fighter >  0.50
+|   |   |   |   |   |   |   |--- class: Harley Quinn
+|   |   |   |   |   |--- Superhero >  0.50
+|   |   |   |   |   |   |--- Genre Marvel <= 0.50
+|   |   |   |   |   |   |   |--- class: Red Hood
+|   |   |   |   |   |   |--- Genre Marvel >  0.50
+|   |   |   |   |   |   |   |--- class: Gambit
+|   |   |   |   |--- Regeneration >  0.50
+|   |   |   |   |   |--- Stealth Expert <= 0.50
+|   |   |   |   |   |   |--- class: Carnage
+|   |   |   |   |   |--- Stealth Expert >  0.50
+|   |   |   |   |   |   |--- Male <= 0.50
+|   |   |   |   |   |   |   |--- Enhanced Senses <= 0.50
+|   |   |   |   |   |   |   |   |--- class: Mystique
+|   |   |   |   |   |   |   |--- Enhanced Senses >  0.50
+|   |   |   |   |   |   |   |   |--- class: Elektra
+|   |   |   |   |   |   |--- Male >  0.50
+|   |   |   |   |   |   |   |--- Ranged Fighter <= 0.50
+|   |   |   |   |   |   |   |   |--- Solo Hero <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: Venom
+|   |   |   |   |   |   |   |   |--- Solo Hero >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: Sabretooth
+|   |   |   |   |   |   |   |--- Ranged Fighter >  0.50
+|   |   |   |   |   |   |   |   |--- class: Blade
+|   |   |   |--- Experiment Origin >  0.50
+|   |   |   |   |--- Avenger <= 0.50
+|   |   |   |   |   |--- class: Deadpool
+|   |   |   |   |--- Avenger >  0.50
+|   |   |   |   |   |--- class: Wolverine
+|   |   |--- Wears Armor >  0.50
+|   |   |   |--- Tech Genius <= 0.50
+|   |   |   |   |--- Experiment Origin <= 0.50
+|   |   |   |   |   |--- Uses Magic <= 0.50
+|   |   |   |   |   |   |--- Enhanced Senses <= 0.50
+|   |   |   |   |   |   |   |--- class: Punisher
+|   |   |   |   |   |   |--- Enhanced Senses >  0.50
+|   |   |   |   |   |   |   |--- class: Taskmaster
+|   |   |   |   |   |--- Uses Magic >  0.50
+|   |   |   |   |   |   |--- class: Moon Knight
+|   |   |   |   |--- Experiment Origin >  0.50
+|   |   |   |   |   |--- class: Winter Soldier
+|   |   |   |--- Tech Genius >  0.50
+|   |   |   |   |--- class: Nebula

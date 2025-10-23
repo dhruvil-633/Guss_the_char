@@ -1,0 +1,619 @@
+================================================================================
+DECISION TREE RULES
+================================================================================
+
+Nodes: 223 | Max depth: 11
+Features: 15 | Classes: 132
+
+├─ Superhero = YES? (samples: 528)
+  ├─ Super Agility = YES? (samples: 192)
+    ├─ Regeneration = YES? (samples: 104)
+      ├─ Solo Hero = YES? (samples: 56)
+        GUESS: Gambit
+           (samples: 4, confidence: 100.0%)
+           Path: Superhero=YES → Super Agility=YES → Regeneration=YES → Solo Hero=YES → 
+
+      └─ Solo Hero = NO?
+        ├─ Uses Weapon = YES? (samples: 52)
+          ├─ Genre: Marvel = YES? (samples: 12)
+            ├─ Super Strength = YES? (samples: 8)
+              GUESS: War Machine
+                 (samples: 4, confidence: 100.0%)
+                 Path: Superhero=YES → Super Agility=YES → Regeneration=YES → Solo Hero=NO → Uses Weapon=YES → Genre: Marvel=YES → Super Strength=YES → 
+
+            └─ Super Strength = NO?
+              GUESS: Green Lantern
+                 (samples: 4, confidence: 100.0%)
+                 Path: Superhero=YES → Super Agility=YES → Regeneration=YES → Solo Hero=NO → Uses Weapon=YES → Genre: Marvel=YES → Super Strength=NO → 
+
+          └─ Genre: Marvel = NO?
+            GUESS: She-Hulk
+               (samples: 4, confidence: 100.0%)
+               Path: Superhero=YES → Super Agility=YES → Regeneration=YES → Solo Hero=NO → Uses Weapon=YES → Genre: Marvel=NO → 
+
+        └─ Uses Weapon = NO?
+          ├─ Enhanced Senses = YES? (samples: 40)
+            ├─ Flies = YES? (samples: 36)
+              ├─ Energy Projection = YES? (samples: 28)
+                ├─ Super Strength = YES? (samples: 16)
+                  ... (truncated)
+                └─ Super Strength = NO?
+                  ... (truncated)
+              └─ Energy Projection = NO?
+                ├─ Genre: Marvel = YES? (samples: 12)
+                  ... (truncated)
+                └─ Genre: Marvel = NO?
+                  ... (truncated)
+            └─ Flies = NO?
+              ├─ Tech Genius = YES? (samples: 8)
+                GUESS: Captain Cold
+                   (samples: 4, confidence: 100.0%)
+                   Path: Superhero=YES → Super Agility=YES → Regeneration=YES → Solo Hero=NO → Uses Weapon=NO → Enhanced Senses=YES → Flies=NO → Tech Genius=YES → 
+
+              └─ Tech Genius = NO?
+                GUESS: Daredevil
+                   (samples: 4, confidence: 100.0%)
+                   Path: Superhero=YES → Super Agility=YES → Regeneration=YES → Solo Hero=NO → Uses Weapon=NO → Enhanced Senses=YES → Flies=NO → Tech Genius=NO → 
+
+          └─ Enhanced Senses = NO?
+            GUESS: Green Arrow
+               (samples: 4, confidence: 100.0%)
+               Path: Superhero=YES → Super Agility=YES → Regeneration=YES → Solo Hero=NO → Uses Weapon=NO → Enhanced Senses=NO → 
+
+    └─ Regeneration = NO?
+      ├─ Tech Genius = YES? (samples: 48)
+        ├─ Uses Weapon = YES? (samples: 24)
+          ├─ Genre: Marvel = YES? (samples: 12)
+            GUESS: Wolverine
+               (samples: 4, confidence: 100.0%)
+               Path: Superhero=YES → Super Agility=YES → Regeneration=NO → Tech Genius=YES → Uses Weapon=YES → Genre: Marvel=YES → 
+
+          └─ Genre: Marvel = NO?
+            ├─ Enhanced Senses = YES? (samples: 8)
+              GUESS: Darkseid
+                 (samples: 4, confidence: 100.0%)
+                 Path: Superhero=YES → Super Agility=YES → Regeneration=NO → Tech Genius=YES → Uses Weapon=YES → Genre: Marvel=NO → Enhanced Senses=YES → 
+
+            └─ Enhanced Senses = NO?
+              GUESS: Batman
+                 (samples: 4, confidence: 100.0%)
+                 Path: Superhero=YES → Super Agility=YES → Regeneration=NO → Tech Genius=YES → Uses Weapon=YES → Genre: Marvel=NO → Enhanced Senses=NO → 
+
+        └─ Uses Weapon = NO?
+          ├─ Enhanced Senses = YES? (samples: 12)
+            GUESS: Captain Marvel
+               (samples: 4, confidence: 100.0%)
+               Path: Superhero=YES → Super Agility=YES → Regeneration=NO → Tech Genius=YES → Uses Weapon=NO → Enhanced Senses=YES → 
+
+          └─ Enhanced Senses = NO?
+            ├─ Genre: Dc = YES? (samples: 8)
+              GUESS: Wonder Woman
+                 (samples: 4, confidence: 100.0%)
+                 Path: Superhero=YES → Super Agility=YES → Regeneration=NO → Tech Genius=YES → Uses Weapon=NO → Enhanced Senses=NO → Genre: Dc=YES → 
+
+            └─ Genre: Dc = NO?
+              GUESS: Elektra
+                 (samples: 4, confidence: 100.0%)
+                 Path: Superhero=YES → Super Agility=YES → Regeneration=NO → Tech Genius=YES → Uses Weapon=NO → Enhanced Senses=NO → Genre: Dc=NO → 
+
+      └─ Tech Genius = NO?
+        ├─ Super Strength = YES? (samples: 24)
+          GUESS: Swamp Thing
+             (samples: 4, confidence: 100.0%)
+             Path: Superhero=YES → Super Agility=YES → Regeneration=NO → Tech Genius=NO → Super Strength=YES → 
+
+        └─ Super Strength = NO?
+          ├─ Genre: Marvel = YES? (samples: 20)
+            ├─ Uses Weapon = YES? (samples: 8)
+              GUESS: Nightwing
+                 (samples: 4, confidence: 100.0%)
+                 Path: Superhero=YES → Super Agility=YES → Regeneration=NO → Tech Genius=NO → Super Strength=NO → Genre: Marvel=YES → Uses Weapon=YES → 
+
+            └─ Uses Weapon = NO?
+              GUESS: Ghost Rider
+                 (samples: 4, confidence: 100.0%)
+                 Path: Superhero=YES → Super Agility=YES → Regeneration=NO → Tech Genius=NO → Super Strength=NO → Genre: Marvel=YES → Uses Weapon=NO → 
+
+          └─ Genre: Marvel = NO?
+            ├─ Solo Hero = YES? (samples: 12)
+              GUESS: Apocalypse
+                 (samples: 4, confidence: 100.0%)
+                 Path: Superhero=YES → Super Agility=YES → Regeneration=NO → Tech Genius=NO → Super Strength=NO → Genre: Marvel=NO → Solo Hero=YES → 
+
+            └─ Solo Hero = NO?
+              ├─ Uses Gadgets = YES? (samples: 8)
+                GUESS: Storm
+                   (samples: 4, confidence: 100.0%)
+                   Path: Superhero=YES → Super Agility=YES → Regeneration=NO → Tech Genius=NO → Super Strength=NO → Genre: Marvel=NO → Solo Hero=NO → Uses Gadgets=YES → 
+
+              └─ Uses Gadgets = NO?
+                GUESS: Carnage
+                   (samples: 4, confidence: 100.0%)
+                   Path: Superhero=YES → Super Agility=YES → Regeneration=NO → Tech Genius=NO → Super Strength=NO → Genre: Marvel=NO → Solo Hero=NO → Uses Gadgets=NO → 
+
+  └─ Super Agility = NO?
+    ├─ Tech Genius = YES? (samples: 88)
+      ├─ Genre: Dc = YES? (samples: 44)
+        ├─ Energy Projection = YES? (samples: 28)
+          ├─ Solo Hero = YES? (samples: 24)
+            ├─ Super Strength = YES? (samples: 8)
+              GUESS: Iceman
+                 (samples: 4, confidence: 100.0%)
+                 Path: Superhero=YES → Super Agility=NO → Tech Genius=YES → Genre: Dc=YES → Energy Projection=YES → Solo Hero=YES → Super Strength=YES → 
+
+            └─ Super Strength = NO?
+              GUESS: Abomination
+                 (samples: 4, confidence: 100.0%)
+                 Path: Superhero=YES → Super Agility=NO → Tech Genius=YES → Genre: Dc=YES → Energy Projection=YES → Solo Hero=YES → Super Strength=NO → 
+
+          └─ Solo Hero = NO?
+            ├─ Uses Gadgets = YES? (samples: 16)
+              ├─ Wears Mask = YES? (samples: 8)
+                GUESS: Sinestro
+                   (samples: 4, confidence: 100.0%)
+                   Path: Superhero=YES → Super Agility=NO → Tech Genius=YES → Genre: Dc=YES → Energy Projection=YES → Solo Hero=NO → Uses Gadgets=YES → Wears Mask=YES → 
+
+              └─ Wears Mask = NO?
+                GUESS: Atom
+                   (samples: 4, confidence: 100.0%)
+                   Path: Superhero=YES → Super Agility=NO → Tech Genius=YES → Genre: Dc=YES → Energy Projection=YES → Solo Hero=NO → Uses Gadgets=YES → Wears Mask=NO → 
+
+            └─ Uses Gadgets = NO?
+              GUESS: Cyborg
+                 (samples: 8, confidence: 50.0%)
+                 Path: Superhero=YES → Super Agility=NO → Tech Genius=YES → Genre: Dc=YES → Energy Projection=YES → Solo Hero=NO → Uses Gadgets=NO → 
+
+        └─ Energy Projection = NO?
+          GUESS: Cyclops
+             (samples: 4, confidence: 100.0%)
+             Path: Superhero=YES → Super Agility=NO → Tech Genius=YES → Genre: Dc=YES → Energy Projection=NO → 
+
+      └─ Genre: Dc = NO?
+        ├─ Regeneration = YES? (samples: 16)
+          ├─ Solo Hero = YES? (samples: 12)
+            GUESS: Ant-Man
+               (samples: 4, confidence: 100.0%)
+               Path: Superhero=YES → Super Agility=NO → Tech Genius=YES → Genre: Dc=NO → Regeneration=YES → Solo Hero=YES → 
+
+          └─ Solo Hero = NO?
+            ├─ Super Strength = YES? (samples: 8)
+              GUESS: Black Adam
+                 (samples: 4, confidence: 100.0%)
+                 Path: Superhero=YES → Super Agility=NO → Tech Genius=YES → Genre: Dc=NO → Regeneration=YES → Solo Hero=NO → Super Strength=YES → 
+
+            └─ Super Strength = NO?
+              GUESS: Thor
+                 (samples: 4, confidence: 100.0%)
+                 Path: Superhero=YES → Super Agility=NO → Tech Genius=YES → Genre: Dc=NO → Regeneration=YES → Solo Hero=NO → Super Strength=NO → 
+
+        └─ Regeneration = NO?
+          GUESS: Winter Soldier
+             (samples: 4, confidence: 100.0%)
+             Path: Superhero=YES → Super Agility=NO → Tech Genius=YES → Genre: Dc=NO → Regeneration=NO → 
+
+    └─ Tech Genius = NO?
+      ├─ Genre: Marvel = YES? (samples: 44)
+        ├─ Regeneration = YES? (samples: 20)
+          ├─ Wears Mask = YES? (samples: 12)
+            GUESS: Moon Knight
+               (samples: 4, confidence: 100.0%)
+               Path: Superhero=YES → Super Agility=NO → Tech Genius=NO → Genre: Marvel=YES → Regeneration=YES → Wears Mask=YES → 
+
+          └─ Wears Mask = NO?
+            GUESS: Penguin
+               (samples: 8, confidence: 50.0%)
+               Path: Superhero=YES → Super Agility=NO → Tech Genius=NO → Genre: Marvel=YES → Regeneration=YES → Wears Mask=NO → 
+
+        └─ Regeneration = NO?
+          ├─ Enhanced Senses = YES? (samples: 8)
+            GUESS: Stargirl
+               (samples: 4, confidence: 100.0%)
+               Path: Superhero=YES → Super Agility=NO → Tech Genius=NO → Genre: Marvel=YES → Regeneration=NO → Enhanced Senses=YES → 
+
+          └─ Enhanced Senses = NO?
+            GUESS: Two-Face
+               (samples: 4, confidence: 100.0%)
+               Path: Superhero=YES → Super Agility=NO → Tech Genius=NO → Genre: Marvel=YES → Regeneration=NO → Enhanced Senses=NO → 
+
+      └─ Genre: Marvel = NO?
+        ├─ Energy Projection = YES? (samples: 24)
+          ├─ Flies = YES? (samples: 8)
+            GUESS: Luke Cage
+               (samples: 4, confidence: 100.0%)
+               Path: Superhero=YES → Super Agility=NO → Tech Genius=NO → Genre: Marvel=NO → Energy Projection=YES → Flies=YES → 
+
+          └─ Flies = NO?
+            GUESS: Nebula
+               (samples: 4, confidence: 100.0%)
+               Path: Superhero=YES → Super Agility=NO → Tech Genius=NO → Genre: Marvel=NO → Energy Projection=YES → Flies=NO → 
+
+        └─ Energy Projection = NO?
+          ├─ Solo Hero = YES? (samples: 16)
+            GUESS: Kitty Pryde
+               (samples: 4, confidence: 100.0%)
+               Path: Superhero=YES → Super Agility=NO → Tech Genius=NO → Genre: Marvel=NO → Energy Projection=NO → Solo Hero=YES → 
+
+          └─ Solo Hero = NO?
+            ├─ Wears Mask = YES? (samples: 12)
+              GUESS: Juggernaut
+                 (samples: 4, confidence: 100.0%)
+                 Path: Superhero=YES → Super Agility=NO → Tech Genius=NO → Genre: Marvel=NO → Energy Projection=NO → Solo Hero=NO → Wears Mask=YES → 
+
+            └─ Wears Mask = NO?
+              GUESS: Vision
+                 (samples: 8, confidence: 50.0%)
+                 Path: Superhero=YES → Super Agility=NO → Tech Genius=NO → Genre: Marvel=NO → Energy Projection=NO → Solo Hero=NO → Wears Mask=NO → 
+
+└─ Superhero = NO?
+  ├─ Tech Genius = YES? (samples: 336)
+    ├─ Genre: Dc = YES? (samples: 224)
+      ├─ Energy Projection = YES? (samples: 124)
+        ├─ Team Member = YES? (samples: 80)
+          ├─ Super Agility = YES? (samples: 28)
+            GUESS: Falcon (Sam Wilson)
+               (samples: 8, confidence: 50.0%)
+               Path: Superhero=NO → Tech Genius=YES → Genre: Dc=YES → Energy Projection=YES → Team Member=YES → Super Agility=YES → 
+
+          └─ Super Agility = NO?
+            ├─ Regeneration = YES? (samples: 20)
+              GUESS: Doctor Fate
+                 (samples: 4, confidence: 100.0%)
+                 Path: Superhero=NO → Tech Genius=YES → Genre: Dc=YES → Energy Projection=YES → Team Member=YES → Super Agility=NO → Regeneration=YES → 
+
+            └─ Regeneration = NO?
+              ├─ Wears Mask = YES? (samples: 16)
+                GUESS: Hawkman
+                   (samples: 4, confidence: 100.0%)
+                   Path: Superhero=NO → Tech Genius=YES → Genre: Dc=YES → Energy Projection=YES → Team Member=YES → Super Agility=NO → Regeneration=NO → Wears Mask=YES → 
+
+              └─ Wears Mask = NO?
+                ├─ Super Strength = YES? (samples: 12)
+                  ... (truncated)
+                └─ Super Strength = NO?
+                  ... (truncated)
+        └─ Team Member = NO?
+          ├─ Regeneration = YES? (samples: 52)
+            ├─ Uses Weapon = YES? (samples: 32)
+              ├─ Uses Gadgets = YES? (samples: 20)
+                ├─ Enhanced Senses = YES? (samples: 12)
+                  ... (truncated)
+                └─ Enhanced Senses = NO?
+                  ... (truncated)
+              └─ Uses Gadgets = NO?
+                ├─ Enhanced Senses = YES? (samples: 8)
+                  ... (truncated)
+                └─ Enhanced Senses = NO?
+                  ... (truncated)
+            └─ Uses Weapon = NO?
+              ├─ Uses Gadgets = YES? (samples: 12)
+                GUESS: Martian Manhunter
+                   (samples: 4, confidence: 100.0%)
+                   Path: Superhero=NO → Tech Genius=YES → Genre: Dc=YES → Energy Projection=YES → Team Member=NO → Regeneration=YES → Uses Weapon=NO → Uses Gadgets=YES → 
+
+              └─ Uses Gadgets = NO?
+                GUESS: Black Canary
+                   (samples: 8, confidence: 50.0%)
+                   Path: Superhero=NO → Tech Genius=YES → Genre: Dc=YES → Energy Projection=YES → Team Member=NO → Regeneration=YES → Uses Weapon=NO → Uses Gadgets=NO → 
+
+          └─ Regeneration = NO?
+            ├─ Uses Weapon = YES? (samples: 20)
+              ├─ Super Agility = YES? (samples: 12)
+                GUESS: Green Goblin
+                   (samples: 8, confidence: 50.0%)
+                   Path: Superhero=NO → Tech Genius=YES → Genre: Dc=YES → Energy Projection=YES → Team Member=NO → Regeneration=NO → Uses Weapon=YES → Super Agility=YES → 
+
+              └─ Super Agility = NO?
+                GUESS: Spectre
+                   (samples: 4, confidence: 100.0%)
+                   Path: Superhero=NO → Tech Genius=YES → Genre: Dc=YES → Energy Projection=YES → Team Member=NO → Regeneration=NO → Uses Weapon=YES → Super Agility=NO → 
+
+            └─ Uses Weapon = NO?
+              ├─ Wears Mask = YES? (samples: 8)
+                GUESS: Black Cat
+                   (samples: 4, confidence: 100.0%)
+                   Path: Superhero=NO → Tech Genius=YES → Genre: Dc=YES → Energy Projection=YES → Team Member=NO → Regeneration=NO → Uses Weapon=NO → Wears Mask=YES → 
+
+              └─ Wears Mask = NO?
+                GUESS: Taskmaster
+                   (samples: 4, confidence: 100.0%)
+                   Path: Superhero=NO → Tech Genius=YES → Genre: Dc=YES → Energy Projection=YES → Team Member=NO → Regeneration=NO → Uses Weapon=NO → Wears Mask=NO → 
+
+      └─ Energy Projection = NO?
+        ├─ Super Agility = YES? (samples: 44)
+          ├─ Super Strength = YES? (samples: 36)
+            ├─ Team Member = YES? (samples: 20)
+              GUESS: Mystique
+                 (samples: 4, confidence: 100.0%)
+                 Path: Superhero=NO → Tech Genius=YES → Genre: Dc=YES → Energy Projection=NO → Super Agility=YES → Super Strength=YES → Team Member=YES → 
+
+            └─ Team Member = NO?
+              ├─ Flies = YES? (samples: 16)
+                GUESS: Deathstroke
+                   (samples: 4, confidence: 100.0%)
+                   Path: Superhero=NO → Tech Genius=YES → Genre: Dc=YES → Energy Projection=NO → Super Agility=YES → Super Strength=YES → Team Member=NO → Flies=YES → 
+
+              └─ Flies = NO?
+                ├─ Uses Weapon = YES? (samples: 12)
+                  ... (truncated)
+                └─ Uses Weapon = NO?
+                  ... (truncated)
+          └─ Super Strength = NO?
+            ├─ Solo Hero = YES? (samples: 16)
+              ├─ Uses Weapon = YES? (samples: 8)
+                GUESS: Supergirl
+                   (samples: 4, confidence: 100.0%)
+                   Path: Superhero=NO → Tech Genius=YES → Genre: Dc=YES → Energy Projection=NO → Super Agility=YES → Super Strength=NO → Solo Hero=YES → Uses Weapon=YES → 
+
+              └─ Uses Weapon = NO?
+                GUESS: Sabretooth
+                   (samples: 4, confidence: 100.0%)
+                   Path: Superhero=NO → Tech Genius=YES → Genre: Dc=YES → Energy Projection=NO → Super Agility=YES → Super Strength=NO → Solo Hero=YES → Uses Weapon=NO → 
+
+            └─ Solo Hero = NO?
+              ├─ Flies = YES? (samples: 8)
+                GUESS: Joker
+                   (samples: 4, confidence: 100.0%)
+                   Path: Superhero=NO → Tech Genius=YES → Genre: Dc=YES → Energy Projection=NO → Super Agility=YES → Super Strength=NO → Solo Hero=NO → Flies=YES → 
+
+              └─ Flies = NO?
+                GUESS: Metallo
+                   (samples: 4, confidence: 100.0%)
+                   Path: Superhero=NO → Tech Genius=YES → Genre: Dc=YES → Energy Projection=NO → Super Agility=YES → Super Strength=NO → Solo Hero=NO → Flies=NO → 
+
+        └─ Super Agility = NO?
+          ├─ Wears Mask = YES? (samples: 8)
+            GUESS: Superboy
+               (samples: 4, confidence: 100.0%)
+               Path: Superhero=NO → Tech Genius=YES → Genre: Dc=YES → Energy Projection=NO → Super Agility=NO → Wears Mask=YES → 
+
+          └─ Wears Mask = NO?
+            GUESS: Loki
+               (samples: 4, confidence: 100.0%)
+               Path: Superhero=NO → Tech Genius=YES → Genre: Dc=YES → Energy Projection=NO → Super Agility=NO → Wears Mask=NO → 
+
+    └─ Genre: Dc = NO?
+      ├─ Uses Weapon = YES? (samples: 100)
+        ├─ Solo Hero = YES? (samples: 64)
+          ├─ Enhanced Senses = YES? (samples: 52)
+            ├─ Energy Projection = YES? (samples: 16)
+              GUESS: Constantine
+                 (samples: 4, confidence: 100.0%)
+                 Path: Superhero=NO → Tech Genius=YES → Genre: Dc=NO → Uses Weapon=YES → Solo Hero=YES → Enhanced Senses=YES → Energy Projection=YES → 
+
+            └─ Energy Projection = NO?
+              ├─ Super Strength = YES? (samples: 12)
+                GUESS: Power Girl
+                   (samples: 8, confidence: 50.0%)
+                   Path: Superhero=NO → Tech Genius=YES → Genre: Dc=NO → Uses Weapon=YES → Solo Hero=YES → Enhanced Senses=YES → Energy Projection=NO → Super Strength=YES → 
+
+              └─ Super Strength = NO?
+                GUESS: Doctor Octopus
+                   (samples: 4, confidence: 100.0%)
+                   Path: Superhero=NO → Tech Genius=YES → Genre: Dc=NO → Uses Weapon=YES → Solo Hero=YES → Enhanced Senses=YES → Energy Projection=NO → Super Strength=NO → 
+
+          └─ Enhanced Senses = NO?
+            ├─ Super Agility = YES? (samples: 36)
+              ├─ Team Member = YES? (samples: 28)
+                GUESS: Aquaman
+                   (samples: 4, confidence: 100.0%)
+                   Path: Superhero=NO → Tech Genius=YES → Genre: Dc=NO → Uses Weapon=YES → Solo Hero=YES → Enhanced Senses=NO → Super Agility=YES → Team Member=YES → 
+
+              └─ Team Member = NO?
+                ├─ Regeneration = YES? (samples: 24)
+                  ... (truncated)
+                └─ Regeneration = NO?
+                  ... (truncated)
+            └─ Super Agility = NO?
+              ├─ Wears Mask = YES? (samples: 8)
+                GUESS: Captain America
+                   (samples: 4, confidence: 100.0%)
+                   Path: Superhero=NO → Tech Genius=YES → Genre: Dc=NO → Uses Weapon=YES → Solo Hero=YES → Enhanced Senses=NO → Super Agility=NO → Wears Mask=YES → 
+
+              └─ Wears Mask = NO?
+                GUESS: Flash
+                   (samples: 4, confidence: 100.0%)
+                   Path: Superhero=NO → Tech Genius=YES → Genre: Dc=NO → Uses Weapon=YES → Solo Hero=YES → Enhanced Senses=NO → Super Agility=NO → Wears Mask=NO → 
+
+        └─ Solo Hero = NO?
+          ├─ Super Strength = YES? (samples: 12)
+            GUESS: Raven
+               (samples: 4, confidence: 100.0%)
+               Path: Superhero=NO → Tech Genius=YES → Genre: Dc=NO → Uses Weapon=YES → Solo Hero=NO → Super Strength=YES → 
+
+          └─ Super Strength = NO?
+            ├─ Energy Projection = YES? (samples: 8)
+              GUESS: Red Skull
+                 (samples: 4, confidence: 100.0%)
+                 Path: Superhero=NO → Tech Genius=YES → Genre: Dc=NO → Uses Weapon=YES → Solo Hero=NO → Super Strength=NO → Energy Projection=YES → 
+
+            └─ Energy Projection = NO?
+              GUESS: Reverse Flash
+                 (samples: 4, confidence: 100.0%)
+                 Path: Superhero=NO → Tech Genius=YES → Genre: Dc=NO → Uses Weapon=YES → Solo Hero=NO → Super Strength=NO → Energy Projection=NO → 
+
+      └─ Uses Weapon = NO?
+        ├─ Uses Gadgets = YES? (samples: 36)
+          ├─ Enhanced Senses = YES? (samples: 24)
+            ├─ Super Strength = YES? (samples: 8)
+              GUESS: Hawkeye
+                 (samples: 4, confidence: 100.0%)
+                 Path: Superhero=NO → Tech Genius=YES → Genre: Dc=NO → Uses Weapon=NO → Uses Gadgets=YES → Enhanced Senses=YES → Super Strength=YES → 
+
+            └─ Super Strength = NO?
+              GUESS: Jessica Jones
+                 (samples: 4, confidence: 100.0%)
+                 Path: Superhero=NO → Tech Genius=YES → Genre: Dc=NO → Uses Weapon=NO → Uses Gadgets=YES → Enhanced Senses=YES → Super Strength=NO → 
+
+          └─ Enhanced Senses = NO?
+            ├─ Super Agility = YES? (samples: 16)
+              ├─ Regeneration = YES? (samples: 12)
+                GUESS: Iron Man
+                   (samples: 4, confidence: 100.0%)
+                   Path: Superhero=NO → Tech Genius=YES → Genre: Dc=NO → Uses Weapon=NO → Uses Gadgets=YES → Enhanced Senses=NO → Super Agility=YES → Regeneration=YES → 
+
+              └─ Regeneration = NO?
+                GUESS: Silver Surfer
+                   (samples: 8, confidence: 50.0%)
+                   Path: Superhero=NO → Tech Genius=YES → Genre: Dc=NO → Uses Weapon=NO → Uses Gadgets=YES → Enhanced Senses=NO → Super Agility=YES → Regeneration=NO → 
+
+            └─ Super Agility = NO?
+              GUESS: Spider-Gwen
+                 (samples: 4, confidence: 100.0%)
+                 Path: Superhero=NO → Tech Genius=YES → Genre: Dc=NO → Uses Weapon=NO → Uses Gadgets=YES → Enhanced Senses=NO → Super Agility=NO → 
+
+        └─ Uses Gadgets = NO?
+          ├─ Enhanced Senses = YES? (samples: 12)
+            GUESS: Catwoman
+               (samples: 8, confidence: 50.0%)
+               Path: Superhero=NO → Tech Genius=YES → Genre: Dc=NO → Uses Weapon=NO → Uses Gadgets=NO → Enhanced Senses=YES → 
+
+          └─ Enhanced Senses = NO?
+            GUESS: Harley Quinn
+               (samples: 4, confidence: 100.0%)
+               Path: Superhero=NO → Tech Genius=YES → Genre: Dc=NO → Uses Weapon=NO → Uses Gadgets=NO → Enhanced Senses=NO → 
+
+  └─ Tech Genius = NO?
+    ├─ Energy Projection = YES? (samples: 112)
+      ├─ Genre: Dc = YES? (samples: 64)
+        ├─ Regeneration = YES? (samples: 36)
+          ├─ Super Strength = YES? (samples: 24)
+            ├─ Super Agility = YES? (samples: 16)
+              GUESS: Red Tornado
+                 (samples: 4, confidence: 100.0%)
+                 Path: Superhero=NO → Tech Genius=NO → Energy Projection=YES → Genre: Dc=YES → Regeneration=YES → Super Strength=YES → Super Agility=YES → 
+
+            └─ Super Agility = NO?
+              ├─ Uses Gadgets = YES? (samples: 12)
+                GUESS: Quicksilver
+                   (samples: 4, confidence: 100.0%)
+                   Path: Superhero=NO → Tech Genius=NO → Energy Projection=YES → Genre: Dc=YES → Regeneration=YES → Super Strength=YES → Super Agility=NO → Uses Gadgets=YES → 
+
+              └─ Uses Gadgets = NO?
+                ├─ Wears Mask = YES? (samples: 8)
+                  ... (truncated)
+                └─ Wears Mask = NO?
+                  ... (truncated)
+          └─ Super Strength = NO?
+            GUESS: Shazam
+               (samples: 8, confidence: 50.0%)
+               Path: Superhero=NO → Tech Genius=NO → Energy Projection=YES → Genre: Dc=YES → Regeneration=YES → Super Strength=NO → 
+
+        └─ Regeneration = NO?
+          ├─ Team Member = YES? (samples: 12)
+            GUESS: Black Panther
+               (samples: 4, confidence: 100.0%)
+               Path: Superhero=NO → Tech Genius=NO → Energy Projection=YES → Genre: Dc=YES → Regeneration=NO → Team Member=YES → 
+
+          └─ Team Member = NO?
+            ├─ Uses Weapon = YES? (samples: 8)
+              GUESS: Ocean Master
+                 (samples: 4, confidence: 100.0%)
+                 Path: Superhero=NO → Tech Genius=NO → Energy Projection=YES → Genre: Dc=YES → Regeneration=NO → Team Member=NO → Uses Weapon=YES → 
+
+            └─ Uses Weapon = NO?
+              GUESS: Red Hood
+                 (samples: 4, confidence: 100.0%)
+                 Path: Superhero=NO → Tech Genius=NO → Energy Projection=YES → Genre: Dc=YES → Regeneration=NO → Team Member=NO → Uses Weapon=NO → 
+
+      └─ Genre: Dc = NO?
+        ├─ Enhanced Senses = YES? (samples: 28)
+          ├─ Uses Weapon = YES? (samples: 20)
+            GUESS: Spider-Man
+               (samples: 4, confidence: 100.0%)
+               Path: Superhero=NO → Tech Genius=NO → Energy Projection=YES → Genre: Dc=NO → Enhanced Senses=YES → Uses Weapon=YES → 
+
+          └─ Uses Weapon = NO?
+            GUESS: Hulk
+               (samples: 16, confidence: 25.0%)
+               Path: Superhero=NO → Tech Genius=NO → Energy Projection=YES → Genre: Dc=NO → Enhanced Senses=YES → Uses Weapon=NO → 
+
+        └─ Enhanced Senses = NO?
+          ├─ Regeneration = YES? (samples: 8)
+            GUESS: Black Widow
+               (samples: 4, confidence: 100.0%)
+               Path: Superhero=NO → Tech Genius=NO → Energy Projection=YES → Genre: Dc=NO → Enhanced Senses=NO → Regeneration=YES → 
+
+          └─ Regeneration = NO?
+            GUESS: Thanos
+               (samples: 4, confidence: 100.0%)
+               Path: Superhero=NO → Tech Genius=NO → Energy Projection=YES → Genre: Dc=NO → Enhanced Senses=NO → Regeneration=NO → 
+
+    └─ Energy Projection = NO?
+      ├─ Genre: Marvel = YES? (samples: 48)
+        ├─ Uses Gadgets = YES? (samples: 24)
+          ├─ Enhanced Senses = YES? (samples: 8)
+            GUESS: Deadpool
+               (samples: 4, confidence: 100.0%)
+               Path: Superhero=NO → Tech Genius=NO → Energy Projection=NO → Genre: Marvel=YES → Uses Gadgets=YES → Enhanced Senses=YES → 
+
+          └─ Enhanced Senses = NO?
+            GUESS: Riddler
+               (samples: 4, confidence: 100.0%)
+               Path: Superhero=NO → Tech Genius=NO → Energy Projection=NO → Genre: Marvel=YES → Uses Gadgets=YES → Enhanced Senses=NO → 
+
+        └─ Uses Gadgets = NO?
+          ├─ Wears Mask = YES? (samples: 16)
+            ├─ Flies = YES? (samples: 12)
+              GUESS: Beast Boy
+                 (samples: 4, confidence: 100.0%)
+                 Path: Superhero=NO → Tech Genius=NO → Energy Projection=NO → Genre: Marvel=YES → Uses Gadgets=NO → Wears Mask=YES → Flies=YES → 
+
+            └─ Flies = NO?
+              ├─ Super Agility = YES? (samples: 8)
+                GUESS: Robin
+                   (samples: 4, confidence: 100.0%)
+                   Path: Superhero=NO → Tech Genius=NO → Energy Projection=NO → Genre: Marvel=YES → Uses Gadgets=NO → Wears Mask=YES → Flies=NO → Super Agility=YES → 
+
+              └─ Super Agility = NO?
+                GUESS: Sandman
+                   (samples: 4, confidence: 100.0%)
+                   Path: Superhero=NO → Tech Genius=NO → Energy Projection=NO → Genre: Marvel=YES → Uses Gadgets=NO → Wears Mask=YES → Flies=NO → Super Agility=NO → 
+
+          └─ Wears Mask = NO?
+            GUESS: Hawkgirl
+               (samples: 4, confidence: 100.0%)
+               Path: Superhero=NO → Tech Genius=NO → Energy Projection=NO → Genre: Marvel=YES → Uses Gadgets=NO → Wears Mask=NO → 
+
+      └─ Genre: Marvel = NO?
+        ├─ Super Strength = YES? (samples: 24)
+          ├─ Uses Gadgets = YES? (samples: 16)
+            GUESS: Starfire
+               (samples: 4, confidence: 100.0%)
+               Path: Superhero=NO → Tech Genius=NO → Energy Projection=NO → Genre: Marvel=NO → Super Strength=YES → Uses Gadgets=YES → 
+
+          └─ Uses Gadgets = NO?
+            ├─ Super Agility = YES? (samples: 12)
+              GUESS: Batwoman
+                 (samples: 8, confidence: 50.0%)
+                 Path: Superhero=NO → Tech Genius=NO → Energy Projection=NO → Genre: Marvel=NO → Super Strength=YES → Uses Gadgets=NO → Super Agility=YES → 
+
+            └─ Super Agility = NO?
+              GUESS: Ego
+                 (samples: 4, confidence: 100.0%)
+                 Path: Superhero=NO → Tech Genius=NO → Energy Projection=NO → Genre: Marvel=NO → Super Strength=YES → Uses Gadgets=NO → Super Agility=NO → 
+
+        └─ Super Strength = NO?
+          ├─ Wears Mask = YES? (samples: 8)
+            GUESS: The Mandarin
+               (samples: 4, confidence: 100.0%)
+               Path: Superhero=NO → Tech Genius=NO → Energy Projection=NO → Genre: Marvel=NO → Super Strength=NO → Wears Mask=YES → 
+
+          └─ Wears Mask = NO?
+            GUESS: Blade
+               (samples: 4, confidence: 100.0%)
+               Path: Superhero=NO → Tech Genius=NO → Energy Projection=NO → Genre: Marvel=NO → Super Strength=NO → Wears Mask=NO → 
+
+
+================================================================================
+FEATURE IMPORTANCE (top 10)
+================================================================================
+ 1. super_strength                 0.1261
+ 2. enhanced_senses                0.0991
+ 3. wears_mask                     0.0901
+ 4. uses_weapon                    0.0901
+ 5. super_agility                  0.0811
+ 6. regeneration                   0.0811
+ 7. uses_gadgets                   0.0721
+ 8. energy_projection              0.0631
+ 9. solo_hero                      0.0631
+10. genre_Marvel                   0.0541
