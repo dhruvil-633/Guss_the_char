@@ -3,4 +3,4 @@ gunicorn==22.0.0
 joblib==1.4.2
 scikit-learn==1.5.2
 numpy==2.3.4
-huggingface_hub==1.28.1
+huggingface_hub
