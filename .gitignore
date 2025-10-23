@@ -1,6 +1,53 @@
+# Python
 __pycache__/
-*.pyc
-myenv/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
 .DS_Store
+Thumbs.db
+
+# HuggingFace cache
+.cache/
+
+# Large model files (keep these on HuggingFace only)
+# If you have model files locally, add them here
+*.pkl
+
+# Environment variables
 .env
 
+# Logs
+*.log

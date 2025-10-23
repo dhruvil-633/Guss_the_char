@@ -1,5 +1,52 @@
-myenv/
-__pycache__/
+# Git
+.git
+.gitignore
+.gitattributes
+
+# CI/CD
+.github
+
+# Documentation
+README.md
+*.md
+docs/
+
+# Python
+__pycache__
 *.pyc
-.git/
+*.pyo
+*.pyd
+.Python
+*.so
+.pytest_cache
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDEs
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# HuggingFace cache (will be downloaded during build)
+.cache/
+
+# Environment files
 .env
+.env.*
+
+# Logs
+*.log
+
+# Any local model files (we're downloading from HuggingFace)
+# Uncomment if you want to exclude local models:
+# *.pkl
